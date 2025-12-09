@@ -10,3 +10,31 @@
         object-fit: cover;
     }
 }
+
+
+// ----- What We Do -----
+.whatWeDo {
+    padding: 40px 35px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .whatWeDo__left {
+        max-width: 800px;
+        width: 100%;
+    }
+  
+    .whatWeDo__right__ul {
+        margin-bottom: 20px;
+    }
+}

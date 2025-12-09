@@ -14,7 +14,7 @@ export default function Home() {
         />
       </section>
       <section className="whatWeDo">
-        <div>
+        <div className="whatWeDo__left">
           <h2>What we do</h2>
           <p>We look forward to customising a system to meet your needs.</p>
           <p>
@@ -35,17 +35,17 @@ export default function Home() {
             system of their dreams.
           </p>
         </div>
-        <div>
+        <div className="whatWeDo__right">
           <h2>Opening hours</h2>
-          <ul>
-            <li>Edinburgh</li>
+          <ul className="whatWeDo__right__ul">
+            <li><strong>Edinburgh</strong></li>
             <li>2 Joppa Rd,Edinburg, EH15 2EU</li>
             <li>Monday to Friday: 10:00am - 5:30pm</li>
             <li>Saturday: 10:00am - 5:30pm</li>
             <li>Sunday: Closed</li>
           </ul>
           <ul>
-            <li>Falkirk</li>
+            <li><strong>Falkirk</strong></li>
             <li>44 Cow Wynd, Falkirk, Central Region, FK1 1PU</li>
             <li>Monday to Friday: 10:00am - 5:30pm</li>
             <li>Saturday - By appointment only</li>

@@ -1,5 +1,5 @@
 @use "../style/variables.scss" as *;
-
+// ----- HEADER -----
 .header {
   padding: 15px 35px;
   background-color: black;
@@ -12,7 +12,6 @@
     align-items: center;
     gap: 20px;
     a {
-      font-family: $font;
       font-size: 14px;
       text-transform: uppercase;
       color: white;
@@ -21,6 +20,45 @@
       }
     }
   }
+  // Header shop hover menu
+  .header__shop {
+    position: relative;
+  }
+  .header__shopMenu {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-3%, 103%);
+    z-index: 67;
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    h2 {
+      margin-bottom: 20px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      li {
+        font-size: 22px;
+        color: $golden-color;
+      }
+    }
+  }
+  .header__shopMenu::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    top: -5px;
+    transform: rotate(45deg);
+    left: 20px;
+    width: 10px;
+    height: 10px;
+  }
+
+  // Header Tools
   .header__tools {
     display: flex;
     align-items: center;

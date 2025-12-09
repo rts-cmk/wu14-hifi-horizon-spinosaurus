@@ -1,0 +1,47 @@
+@use "../style/variables.scss" as *;
+
+.header {
+  padding: 15px 35px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  .header__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    a {
+      font-family: $font;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: white;
+      img {
+        width: 55px;
+      }
+    }
+  }
+  .header__tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .header__tools__input {
+      position: relative;
+      input {
+        border-radius: 3px;
+        padding: 10px;
+        font-size: 12pxF;
+        width: 200px;
+      }
+      input::placeholder {
+        color: black;
+      }
+      button {
+        cursor: pointer;
+        position: absolute;
+        top: 25%;
+        right: 3px;
+      }
+    }
+  }
+}

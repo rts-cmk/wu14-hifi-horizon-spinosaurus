@@ -1,6 +1,9 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./home.scss";
+import ProductCard from "../components/ProductCard";
+import SigmaButton from "../components/SigmaButton";
+import { Link } from "react-router";
 export default function Home() {
   return (
     <div className="homepage__wrapper">
@@ -13,6 +16,17 @@ export default function Home() {
           autoPlay
           loop
         />
+      </section>
+
+      <section className="popularProducts">
+        <div className="popularProducts__top">
+          
+        <h2>Popular products</h2>
+        <Link>
+          <SigmaButton text={"See all products"} />
+        </Link>
+        </div>
+        <ProductCard />
       </section>
       <section className="whatWeDo">
         <div className="whatWeDo__left">
@@ -39,14 +53,18 @@ export default function Home() {
         <div className="whatWeDo__right">
           <h2>Opening hours</h2>
           <ul className="whatWeDo__right__ul">
-            <li><strong>Edinburgh</strong></li>
+            <li>
+              <strong>Edinburgh</strong>
+            </li>
             <li>2 Joppa Rd,Edinburg, EH15 2EU</li>
             <li>Monday to Friday: 10:00am - 5:30pm</li>
             <li>Saturday: 10:00am - 5:30pm</li>
             <li>Sunday: Closed</li>
           </ul>
           <ul>
-            <li><strong>Falkirk</strong></li>
+            <li>
+              <strong>Falkirk</strong>
+            </li>
             <li>44 Cow Wynd, Falkirk, Central Region, FK1 1PU</li>
             <li>Monday to Friday: 10:00am - 5:30pm</li>
             <li>Saturday - By appointment only</li>
@@ -54,6 +72,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
       <Footer />
     </div>
   );

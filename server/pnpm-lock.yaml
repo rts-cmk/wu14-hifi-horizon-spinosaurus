@@ -14,6 +14,9 @@ importers:
       express:
         specifier: ^5.2.1
         version: 5.2.1
+      filesystem:
+        specifier: ^1.0.1
+        version: 1.0.1
 
 packages:
 
@@ -37,6 +40,10 @@ packages:
     resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
     engines: {node: '>= 0.4'}
 
+  configuration-processor@1.1.1:
+    resolution: {integrity: sha512-nQYMSZfAxUyBWpCQQh2tk/kJ8Eg6c50klw2edEY1R6xoUJ0Vy6IYQclNYubXR6B0bThDahn/TNQfDD+vzxpTFQ==}
+    engines: {node: '>=0.8'}
+
   content-disposition@1.0.1:
     resolution: {integrity: sha512-oIXISMynqSqm241k6kcQ5UwttDILMK4BiurCfGEREw6+X9jkkpEe5T9FZaApyLGGOnFuyMWZpdolTXMtvEJ08Q==}
     engines: {node: '>=18'}
@@ -56,6 +63,10 @@ packages:
   cors@2.8.5:
     resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
     engines: {node: '>= 0.10'}
+
+  data-container@1.1.0:
+    resolution: {integrity: sha512-WnmEstSHZMOYJsy+BHKVxtZ1M0scmN74pLfm8CwMtQr/AxJjUVXFt3M04T/B2iahhtMxGIiLKFi3nr/tdBmX5Q==}
+    engines: {node: '>=0.8'}
 
   debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
@@ -100,9 +111,17 @@ packages:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
 
+  event-dispatcher@2.4.0:
+    resolution: {integrity: sha512-08u6SPGt/atk1W5o1Fa2IeH0cme8Fsp42qI1XsdKqZbl+rgcwY/AYtlqV04nylyhKAQ33Zql0rkYH0Z4/TVy8Q==}
+    engines: {node: '>=0.10'}
+
   express@5.2.1:
     resolution: {integrity: sha512-hIS4idWWai69NezIdRt2xFVofaF4j+6INOpJlVOLDO8zXGpUVEVzIYk12UUi2JzjEzWL3IOAxcTubgz9Po0yXw==}
     engines: {node: '>= 18'}
+
+  filesystem@1.0.1:
+    resolution: {integrity: sha512-IlnKZqVmv+UNR8kVknA47RY1rSfdJxNNmiX0osELJxhNj010cjlXH7nj7Vq1bPBPTrHtVrRYIWymXjVPlxffdw==}
+    engines: {node: '>=0.8'}
 
   finalhandler@2.1.1:
     resolution: {integrity: sha512-S8KoZgRZN+a5rNwqTxlZZePjT/4cnm0ROV70LedRHZ0p8u9fRID0hJUZQpkKLzro8LfmC8sx23bY6tVNxv8pQA==}
@@ -312,6 +331,8 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       get-intrinsic: 1.3.0
 
+  configuration-processor@1.1.1: {}
+
   content-disposition@1.0.1: {}
 
   content-type@1.0.5: {}
@@ -324,6 +345,10 @@ snapshots:
     dependencies:
       object-assign: 4.1.1
       vary: 1.1.2
+
+  data-container@1.1.0:
+    dependencies:
+      configuration-processor: 1.1.1
 
   debug@4.4.3:
     dependencies:
@@ -352,6 +377,11 @@ snapshots:
   escape-html@1.0.3: {}
 
   etag@1.8.1: {}
+
+  event-dispatcher@2.4.0:
+    dependencies:
+      configuration-processor: 1.1.1
+      data-container: 1.1.0
 
   express@5.2.1:
     dependencies:
@@ -385,6 +415,11 @@ snapshots:
       vary: 1.1.2
     transitivePeerDependencies:
       - supports-color
+
+  filesystem@1.0.1:
+    dependencies:
+      configuration-processor: 1.1.1
+      event-dispatcher: 2.4.0
 
   finalhandler@2.1.1:
     dependencies:

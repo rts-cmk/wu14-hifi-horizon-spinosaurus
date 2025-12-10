@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./home.scss";
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

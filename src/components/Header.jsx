@@ -6,7 +6,7 @@ import "./Header.scss";
 export default function Header() {
   const [shopMenu, setShopMenu] = useState(false);
   return (
-    <div className="header">
+    <header className="header">
       <ul className="header__links">
         <li>
           <NavLink to={"/"}>
@@ -57,6 +57,6 @@ export default function Header() {
           <FaShoppingCart color="white" size={25} />
         </li>
       </ul>
-    </div>
+    </header>
   );
 }

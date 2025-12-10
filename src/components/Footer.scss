@@ -1,1 +1,68 @@
 @use "../style/variables.scss" as *;
+
+.footer {
+  background: black;
+  color: white;
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__ul {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+  }
+  .phone {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    span {
+      width: 1rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  &__div {
+    border-top: solid 1px $gray3-color;
+    margin-top: 1rem;
+    padding: 1rem;
+    &__ul {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+    }
+    &__container {
+      font-size: 8px;
+      display: flex;
+      gap: 500px;
+    }
+  }
+}
+
+// sigma
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    padding: 2rem;
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__ul {
+      gap: 7px;
+      margin-bottom: 20px;
+    }
+    &__div__container {
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+}

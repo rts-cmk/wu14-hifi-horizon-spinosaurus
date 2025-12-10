@@ -87,26 +87,24 @@ export default function Header() {
               <span></span>
               <span></span>
             </button>
-            {burgerMenu && (
-              <div className={`burgerOpen ${burgerMenu ? "open" : ""}`}>
-                <ul>
-                  <li>
-                    <img src="/logo_hifi.svg" alt="" />
-                  </li>
-                  <li>
-                    <NavLink to={"/shop"}>Shop</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to={"/about"} />
-                    About us
-                  </li>
-                  <li>
-                    <NavLink to={"/contact"} />
-                    Contact us
-                  </li>
-                </ul>
-              </div>
-            )}
+          </li>
+        </ul>
+      </div>
+      <div className={`burgerOpen ${burgerMenu ? "open" : ""}`}>
+        <ul>
+          <li>
+            <img src="/logo_hifi.svg" alt="" />
+          </li>
+          <li>
+            <NavLink to={"/shop"}>Shop</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/about"} />
+            About us
+          </li>
+          <li>
+            <NavLink to={"/contact"} />
+            Contact us
           </li>
         </ul>
       </div>

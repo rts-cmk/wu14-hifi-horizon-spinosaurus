@@ -59,7 +59,7 @@ export default function Header() {
             <FaShoppingCart color="white" size={25} />
           </li>
         </ul>
-      </div>
+      </header>
       {/* NavBarPhone*/}
       <div className="navBar">
         <ul>

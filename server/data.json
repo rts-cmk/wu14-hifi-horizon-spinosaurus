@@ -1,0 +1,292 @@
+{
+	"products": [
+		{
+			"id": "cd_afspillere_creek_classic_cd",
+			"category": "cd_afspillere",
+			"name": "Creek Classic CD",
+			"image": "/Produktbilleder/cd_afspillere/creek_classic_cd.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek Classic CD high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "cd_afspillere_creek_destiny_cd",
+			"category": "cd_afspillere",
+			"name": "Creek Destiny CD",
+			"image": "/Produktbilleder/cd_afspillere/creek_Destiny_CD.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek Destiny CD high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "cd_afspillere_creek_evo_cd",
+			"category": "cd_afspillere",
+			"name": "Creek Evo CD",
+			"image": "/Produktbilleder/cd_afspillere/creek_evo_cd.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek Evo CD high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "cd_afspillere_exposure_2010s_cd",
+			"category": "cd_afspillere",
+			"name": "Exposure 2010S CD",
+			"image": "/Produktbilleder/cd_afspillere/Exp_2010S_CD.gif",
+			"price": "£ 4.799,00",
+			"description": "Exposure 2010S CD high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "dvdafspillere_creek_classic",
+			"category": "dvdafspillere",
+			"name": "Creek Classic",
+			"image": "/Produktbilleder/dvdafspillere/creek_classic.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek Classic high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "dvdafspillere_exposure_2010s",
+			"category": "dvdafspillere",
+			"name": "Exposure 2010S",
+			"image": "/Produktbilleder/dvdafspillere/exposure_2010S.jpg",
+			"price": "£ 4.799,00",
+			"description": "Exposure 2010S high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "dvdafspillere_parasound_d200",
+			"category": "dvdafspillere",
+			"name": "Parasound D200",
+			"image": "/Produktbilleder/dvdafspillere/parasound_d200.jpg",
+			"price": "£ 4.799,00",
+			"description": "Parasound D200 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "dvdafspillere_parasound_halo_d3",
+			"category": "dvdafspillere",
+			"name": "Parasound Halo D3",
+			"image": "/Produktbilleder/dvdafspillere/parasound_halod3.jpg",
+			"price": "£ 4.799,00",
+			"description": "Parasound Halo D3 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "effektforstaerkere_manley_mahi",
+			"category": "effektforstaerkere",
+			"name": "Manley Mahi",
+			"image": "/Produktbilleder/effektforstaerkere/manley_mahi.jpg",
+			"price": "£ 4.799,00",
+			"description": "Manley Mahi high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "effektforstaerkere_manley_neoclassic_300b",
+			"category": "effektforstaerkere",
+			"name": "Manley Neo-Classic 300B",
+			"image": "/Produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg",
+			"price": "£ 4.799,00",
+			"description": "Manley Neo-Classic 300B high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "effektforstaerkere_manley_snapper",
+			"category": "effektforstaerkere",
+			"name": "Manley Snapper",
+			"image": "/Produktbilleder/effektforstaerkere/manley_snapper.jpg",
+			"price": "£ 4.799,00",
+			"description": "Manley Snapper high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "effektforstaerkere_parasound_halo_a23",
+			"category": "effektforstaerkere",
+			"name": "Parasound Halo A23",
+			"image": "/Produktbilleder/effektforstaerkere/parasound_haloa23.jpg",
+			"price": "£ 4.799,00",
+			"description": "Parasound Halo A23 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "forforstaerkere_creek_obh22_passive_preamp",
+			"category": "forforstaerkere",
+			"name": "Creek OBH-22 Passive Preamp",
+			"image": "/Produktbilleder/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek OBH-22 Passive Preamp high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "forforstaerkere_parasound_classic_7100",
+			"category": "forforstaerkere",
+			"name": "Parasound Classic 7100",
+			"image": "/Produktbilleder/forforstaerkere/parasound_classic7100.jpg",
+			"price": "£ 4.799,00",
+			"description": "Parasound Classic 7100 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "forforstaerkere_parasound_halo_p3",
+			"category": "forforstaerkere",
+			"name": "Parasound Halo P3",
+			"image": "/Produktbilleder/forforstaerkere/parasound_halop3.jpg",
+			"price": "£ 4.799,00",
+			"description": "Parasound Halo P3 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "forforstaerkere_project_pre_box",
+			"category": "forforstaerkere",
+			"name": "Pro-Ject Pre Box",
+			"image": "/Produktbilleder/forforstaerkere/Project_prebox.jpg",
+			"price": "£ 4.799,00",
+			"description": "Pro-Ject Pre Box high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "hojtalere_boesendorfer_vcs_wall",
+			"category": "hojtalere",
+			"name": "Boesendorfer VCS Wall",
+			"image": "/Produktbilleder/hojtalere/boesendorfer_vcs_wall.gif",
+			"price": "£ 4.799,00",
+			"description": "Boesendorfer VCS Wall high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "hojtalere_epos_m5",
+			"category": "hojtalere",
+			"name": "Epos M5",
+			"image": "/Produktbilleder/hojtalere/epos_m5.gif",
+			"price": "£ 4.799,00",
+			"description": "Epos M5 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "hojtalere_harbeth_hl7_es2",
+			"category": "hojtalere",
+			"name": "Harbeth HL7 ES2",
+			"image": "/Produktbilleder/hojtalere/harbeth_hl7es2.jpg",
+			"price": "£ 4.799,00",
+			"description": "Harbeth HL7 ES2 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "hojtalere_harbeth_monitor_30",
+			"category": "hojtalere",
+			"name": "Harbeth Monitor 30",
+			"image": "/Produktbilleder/hojtalere/harbeth_monitor30.jpg",
+			"price": "£ 4.799,00",
+			"description": "Harbeth Monitor 30 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "hojtalere_harbeth_p3es2",
+			"category": "hojtalere",
+			"name": "Harbeth P3ES2",
+			"image": "/Produktbilleder/hojtalere/harbeth_p3es2.jpg",
+			"price": "£ 4.799,00",
+			"description": "Harbeth P3ES2 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "int_forstaerkere_creek_a50i",
+			"category": "int_forstaerkere",
+			"name": "Creek A50i",
+			"image": "/Produktbilleder/int_forstaerkere/creek_a50I.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek A50i high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "int_forstaerkere_creek_classic_5350se",
+			"category": "int_forstaerkere",
+			"name": "Creek Classic 5350SE",
+			"image": "/Produktbilleder/int_forstaerkere/creek_classic5350SE.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek Classic 5350SE high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "int_forstaerkere_creek_destiny_amp",
+			"category": "int_forstaerkere",
+			"name": "Creek Destiny Amp",
+			"image": "/Produktbilleder/int_forstaerkere/creek_destinyamp.jpg",
+			"price": "£ 4.799,00",
+			"description": "Creek Destiny Amp high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "int_forstaerkere_manley_snapper",
+			"category": "int_forstaerkere",
+			"name": "Manley Snapper",
+			"image": "/Produktbilleder/int_forstaerkere/manley_snapper.jpg",
+			"price": "£ 4.799,00",
+			"description": "Manley Snapper high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "int_forstaerkere_manley_stingray",
+			"category": "int_forstaerkere",
+			"name": "Manley Stingray",
+			"image": "/Produktbilleder/int_forstaerkere/Manley_Stingray.jpg",
+			"price": "£ 4.799,00",
+			"description": "Manley Stingray high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "pladespillere_pro_ject_debut_3_black",
+			"category": "pladespillere",
+			"name": "Pro-Ject Debut 3 Black",
+			"image": "/Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
+			"price": "£ 4.799,00",
+			"description": "Pro-Ject Debut 3 Black high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "pladespillere_pro_ject_debut_iii_red",
+			"category": "pladespillere",
+			"name": "Pro-Ject Debut III Red",
+			"image": "/Produktbilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
+			"price": "£ 4.799,00",
+			"description": "Pro-Ject Debut III Red high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "pladespillere_pro_ject_debut_iii_yellow",
+			"category": "pladespillere",
+			"name": "Pro-Ject Debut III Yellow",
+			"image": "/Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
+			"price": "£ 4.799,00",
+			"description": "Pro-Ject Debut III Yellow high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "pladespillere_pro_ject_rpm_10",
+			"category": "pladespillere",
+			"name": "Pro-Ject RPM 10",
+			"image": "/Produktbilleder/pladespillere/Pro_ject_rpm10.jpg",
+			"price": "£ 4.799,00",
+			"description": "Pro-Ject RPM 10 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "pladespillere_pro_ject_rpm_5",
+			"category": "pladespillere",
+			"name": "Pro-Ject RPM 5",
+			"image": "/Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
+			"price": "£ 4.799,00",
+			"description": "Pro-Ject RPM 5 high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "roer_forstaerkere_jolida_jd102b",
+			"category": "roer_forstaerkere",
+			"name": "Jolida JD102b",
+			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD102b.jpg",
+			"price": "£ 4.799,00",
+			"description": "Jolida JD102b high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "roer_forstaerkere_jolida_jd202a",
+			"category": "roer_forstaerkere",
+			"name": "Jolida JD202a",
+			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg",
+			"price": "£ 4.799,00",
+			"description": "Jolida JD202a high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "roer_forstaerkere_jolida_jd300b",
+			"category": "roer_forstaerkere",
+			"name": "Jolida JD300b",
+			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD300b.jpg",
+			"price": "£ 4.799,00",
+			"description": "Jolida JD300b high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "roer_forstaerkere_jolida_jd302b",
+			"category": "roer_forstaerkere",
+			"name": "Jolida JD302b",
+			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg",
+			"price": "£ 4.799,00",
+			"description": "Jolida JD302b high-fidelity component for discerning listeners."
+		},
+		{
+			"id": "roer_forstaerkere_jolida_jd502b",
+			"category": "roer_forstaerkere",
+			"name": "Jolida JD502b",
+			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD502b.jpg",
+			"price": "£ 4.799,00",
+			"description": "Jolida JD502b high-fidelity component for discerning listeners."
+		}
+	]
+}

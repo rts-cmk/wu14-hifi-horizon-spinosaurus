@@ -5,58 +5,109 @@ import "./Header.scss";
 
 export default function Header() {
   const [shopMenu, setShopMenu] = useState(false);
+  const [burgerMenu, setburgerMenu] = useState(false);
   return (
-    <header className="header">
-      <ul className="header__links">
-        <li>
-          <NavLink to={"/"}>
-            <img src="/logo_hifi.svg" alt="hifi_logo" />
-          </NavLink>
-        </li>
-        <li
-          onMouseEnter={() => setShopMenu(true)}
-          onMouseLeave={() => setShopMenu(false)}
-          className="header__shop"
-        >
-          <NavLink to={"/"}>Shop</NavLink>
-          {shopMenu && (
-            <div className="header__shopMenu">
+    <>
+      <header className="header">
+        <ul className="header__links">
+          <li>
+            <NavLink to={"/"}>
+              <img src="/logo_hifi.svg" alt="hifi_logo" />
+            </NavLink>
+          </li>
+          <li
+            onMouseEnter={() => setShopMenu(true)}
+            onMouseLeave={() => setShopMenu(false)}
+            className="header__shop"
+          >
+            <NavLink to={"/"}>Shop</NavLink>
+            {shopMenu && (
+              <div className="header__shopMenu">
                 <h2>Browse Categories</h2>
                 <ul>
-                    <li>CD Players</li>
-                    <li>DVD Players</li>
-                    <li>Preamps</li>
-                    <li>Speakers</li>
-                    <li>Turntables</li>
-                    <li>Integrated Amplifiers</li>
-                    <li>Power Amplifiers</li>
-                    <li>Tube Amplifiers</li>
+                  <li>CD Players</li>
+                  <li>DVD Players</li>
+                  <li>Preamps</li>
+                  <li>Speakers</li>
+                  <li>Turntables</li>
+                  <li>Integrated Amplifiers</li>
+                  <li>Power Amplifiers</li>
+                  <li>Tube Amplifiers</li>
                 </ul>
-            </div>
-        )}
-        </li>
-        <li>
-          <NavLink to={"/"}>About us</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/"}>Contact us</NavLink>
-        </li>
-      </ul>
-      <ul className="header__tools">
-        {/*input component????????*/}
-        <li className="header__tools__input">
-          <input type="text" placeholder="Search product..." />
-          <button>
-            <FaSearch size={20} />
-          </button>
-        </li>
-        <li>
-          <FaUser color="white" size={25} />
-        </li>
-        <li>
-          <FaShoppingCart color="white" size={25} />
-        </li>
-      </ul>
-    </header>
+              </div>
+            )}
+          </li>
+          <li>
+            <NavLink to={"/"}>About us</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/"}>Contact us</NavLink>
+          </li>
+        </ul>
+        <ul className="header__tools">
+          {/*input component????????*/}
+          <li className="header__tools__input">
+            <input type="text" placeholder="Search product..." />
+            <button>
+              <FaSearch size={20} />
+            </button>
+          </li>
+          <li>
+            <FaUser color="white" size={25} />
+          </li>
+          <li>
+            <FaShoppingCart color="white" size={25} />
+          </li>
+        </ul>
+      </div>
+      {/* NavBarPhone*/}
+      <div className="navBar">
+        <ul>
+          <li>
+            <button>
+              <FaSearch color="white" size={22} />
+            </button>
+          </li>
+          <li>
+            <button>
+              <FaUser color="white" size={22} />
+            </button>
+          </li>
+          <li>
+            <button>
+              <FaShoppingCart color="white" size={22} />
+            </button>
+          </li>
+          <li className="burger">
+            <button
+              onClick={() => setburgerMenu((prev) => !prev)}
+              className={`burger__btn ${burgerMenu ? "open" : ""}`}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div className={`burgerOpen ${burgerMenu ? "open" : ""}`}>
+        <ul>
+          <li>
+            <img src="/logo_hifi.svg" alt="" />
+          </li>
+          <li>
+            <NavLink to={"/shop"}>Shop</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/about"} />
+            About us
+          </li>
+          <li>
+            <NavLink to={"/contact"} />
+            Contact us
+          </li>
+        </ul>
+      </div>
+    </>
   );
 }

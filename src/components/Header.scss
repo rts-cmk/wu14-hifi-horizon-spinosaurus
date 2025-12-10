@@ -1,5 +1,8 @@
 @use "../style/variables.scss" as *;
 // ----- HEADER -----
+.navBar {
+  display: none;
+}
 .header {
   padding: 15px 35px;
   background-color: black;
@@ -81,5 +84,104 @@
         right: 3px;
       }
     }
+  }
+}
+
+// ----- NavBarPhone -----
+.navBar {
+  box-shadow: 0px -3px 5px 0px rgba(50, 50, 50, 0.75);
+  padding: 20px 35px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  max-width: 600px;
+  width: 100%;
+  background-color: black;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+// burger menu
+.burger {
+  position: relative;
+}
+.burger__btn {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+  span {
+    border-radius: 5px;
+    width: 22px;
+    height: 3px;
+    background-color: white;
+  }
+}
+.burger__btn.open {
+  span {
+    background-color: $appelsin-color;
+    transition: transform 0.4s ease-in;
+  }
+}
+.burger__btn.open span:nth-child(2) {
+  display: none;
+  visibility: hidden;
+}
+.burger__btn.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.burger__btn.open span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+//
+
+.burgerOpen {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 0;
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+  color: white;
+  right: 0;
+  bottom: 67px;
+  transition: height 0.3s ease;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    a {
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+.burgerOpen.open {
+  visibility: visible;
+  height: 400px;
+}
+
+// ----- Responsive -----
+@media (max-width: 690px) {
+  .header {
+    input {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .navBar {
+    display: block;
   }
 }

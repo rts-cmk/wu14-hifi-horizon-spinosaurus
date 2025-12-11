@@ -84,13 +84,25 @@ export default function Home() {
             <input
               className="homepage__newsletter__container__form__input"
               type="text"
-              name=""
-              id=""
+              name="signUp"
+              id="signUp"
             />
-            <SigmaButton
+            <button
+              type="submit"
               className="homepage__newsletter__container__form__button"
               text={"Sign up"}
-            />
+              onClick={(e) => {
+                if (signUp.value === "") {
+                  e.preventDefault();
+                  alert("Please enter a valid email address");
+                  return;
+                }
+                alert("Thank you for signing up!");
+                e.preventDefault();
+              }}
+            >
+              Sign up
+            </button>
           </form>
         </div>
       </section>

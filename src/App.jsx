@@ -4,6 +4,7 @@ import "./style/main.scss";
 import Home from "./pages/Home";
 import NotFound from "./components/NotFound";
 import About from "./pages/About";
+import ProductsDetails from "./pages/ProductsDetailed";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/productsDetails/:id" element={<ProductsDetails />} />
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>

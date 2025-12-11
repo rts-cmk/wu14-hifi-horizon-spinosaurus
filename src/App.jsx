@@ -4,7 +4,6 @@ import "./style/main.scss";
 // Routes 
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
-import About from "./pages/About";
 import NotFound from "./components/NotFound";
 import About from "./pages/About";
 import ProductsDetails from "./pages/ProductsDetailed";

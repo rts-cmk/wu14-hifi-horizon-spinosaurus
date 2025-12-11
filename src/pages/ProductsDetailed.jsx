@@ -42,6 +42,9 @@ export default function ProductsDetails() {
           }} >minus</button>
           <p>{cart}</p>
           <button onClick={() => setCart(cart + 1)}>plus</button>
+          <button onClick={() => {
+            
+          }} className="productsDetails__section__info__cartButton">Add to cart</button>
         </div>
       </section>
     </div>

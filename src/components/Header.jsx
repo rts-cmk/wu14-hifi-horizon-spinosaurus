@@ -38,10 +38,10 @@ export default function Header() {
             )}
           </li>
           <li>
-            <NavLink to={"/"}>About us</NavLink>
+            <NavLink to={"/about"}>About us</NavLink>
           </li>
           <li>
-            <NavLink to={"/"}>Contact us</NavLink>
+            <NavLink to={"/contact"}>Contact us</NavLink>
           </li>
         </ul>
         <ul className="header__tools">

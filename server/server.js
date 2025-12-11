@@ -6,7 +6,9 @@ const PORT = 6767
 
 const app = express()
 
-app.get("/", (req, res) => {
+app.use(cors())
+
+app.get("/products", (req, res) => {
     fs.readFile("data.json", "utf-8", (err, data) => {
         if (err) {
             return res.json({ error: "den kan ikke læse indholdet dawg" })
@@ -16,7 +18,6 @@ app.get("/", (req, res) => {
     })
     
 })
-
 
 app.listen(PORT, () => {
     console.log("server er startet");

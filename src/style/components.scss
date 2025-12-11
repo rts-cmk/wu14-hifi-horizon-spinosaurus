@@ -17,11 +17,11 @@
 // ProductCard
 .productCard {
   position: relative;
-  padding: 25px;
+  padding: 20px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white;
-  width: 260px;
-  height: 330px;
+  width: 280px;
+  height: 400px;
   text-align: center;
   .productCard__img {
     display: flex;
@@ -40,12 +40,32 @@
     gap: 10px;
     p {
       font-size: 14px;
-      font-weight: bold;
     }
     .productCard__content__bottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      p {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .stock__circle {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+      }
+    }
+
+    .stock__circle.red {
+      background-color: red;
+    }
+    .stock__circle.green {
+      background-color: green;
+    }
+    .stock__circle.orange {
+      background-color: orange;
     }
   }
 

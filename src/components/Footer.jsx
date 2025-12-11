@@ -16,31 +16,33 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <ul className="footer__ul">
-          <li>
+          <li className="footer__ul__list">
             <Link to={"/"}>Home</Link>
           </li>
-          <li>
+          <li className="footer__ul__list">
             <Link to={"/products"}>Shop</Link>
           </li>
-          <li>
+          <li className="footer__ul__list">
             <Link to={"/about"}>About us</Link>
           </li>
         </ul>
         <ul className="footer__ul">
-          <li>Returns & Refunds</li>
-          <li>Delivery</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
+          <li className="footer__ul__list">Returns & Refunds</li>
+          <li className="footer__ul__list">Delivery</li>
+          <li className="footer__ul__list">Privacy Policy</li>
+          <li className="footer__ul__list">Terms & Conditions</li>
         </ul>
         <ul className="footer__ul">
-          <h3>Contact</h3>
-          <li>2 Joppa Rd, Edinburgh, EH15 2EU</li>
+          <h3 className="footer__ul__h3">Contact</h3>
+          <li className="footer__ul__li">2 Joppa Rd, Edinburgh, EH15 2EU</li>
           <li className="phone">
             <FaPhoneAlt style={{ width: "20px", height: "20px" }} />
             <span />
             0131 556 7901
           </li>
-          <li>44 Cow Wynd, Falkirk, Central Region, FK1 1PU</li>
+          <li className="footer__ul__li">
+            44 Cow Wynd, Falkirk, Central Region, FK1 1PU
+          </li>
           <li className="phone">
             <FaPhoneAlt style={{ width: "20px", height: "20px" }} />
             <span />

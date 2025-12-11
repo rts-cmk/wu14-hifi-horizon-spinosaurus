@@ -20,11 +20,10 @@ export default function Home() {
 
       <section className="popularProducts">
         <div className="popularProducts__top">
-          
-        <h2>Popular products</h2>
-        <Link>
-          <SigmaButton text={"See all products"} />
-        </Link>
+          <h2>Popular products</h2>
+          <Link>
+            <SigmaButton text={"See all products"} />
+          </Link>
         </div>
         <ProductCard />
       </section>
@@ -70,6 +69,29 @@ export default function Home() {
             <li>Saturday - By appointment only</li>
             <li>Sunday: Closed</li>
           </ul>
+        </div>
+      </section>
+      <section className="homepage__newsletter">
+        <div className="homepage__newsletter__container">
+          <h2 className="homepage__newsletter__container__title">
+            Sign up for our newsletter
+          </h2>
+          <p className="homepage__newsletter__container__text">
+            Subscribing to our newsletter secures you up to date information
+            about HiFi Horizons latest updates and offers.
+          </p>
+          <form className="homepage__newsletter__container__form" action="">
+            <input
+              className="homepage__newsletter__container__form__input"
+              type="text"
+              name=""
+              id=""
+            />
+            <SigmaButton
+              className="homepage__newsletter__container__form__button"
+              text={"Sign up"}
+            />
+          </form>
         </div>
       </section>
 

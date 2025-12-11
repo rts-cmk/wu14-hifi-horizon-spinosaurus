@@ -26,6 +26,24 @@
       text-transform: uppercase;
     }
   }
+    padding: 20px 35px 50px 35px;
+    .popularProducts__top {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            color: $gray4-color;
+            text-transform: uppercase;
+        }
+    }
+    .popularProducts__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
 }
 
 // ----- What We Do -----

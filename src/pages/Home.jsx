@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import "./home.scss";
 import ProductCard from "../components/ProductCard";
 import SigmaButton from "../components/SigmaButton";
+import "./home.scss";
 import { Link } from "react-router";
 export default function Home() {
+  const [popularProducts, setPopularProducts] = useState([]);
+
+  // Popular products
+  useEffect(() => {
+    fetch("http://localhost:6767/products")
+      .then((res) => res.json())
+      .then((data) => setPopularProducts(data.products.slice(0, 4)));
+  }, []);
+
   return (
     <div className="homepage__wrapper">
       <Header />
@@ -25,7 +35,11 @@ export default function Home() {
             <SigmaButton text={"See all products"} />
           </Link>
         </div>
-        <ProductCard />
+        <div className="popularProducts__grid">
+          {popularProducts.map((product) => (
+            <ProductCard popular={true} key={product.id} product={product} />
+          ))}
+        </div>
       </section>
       <section className="whatWeDo">
         <div className="whatWeDo__left">

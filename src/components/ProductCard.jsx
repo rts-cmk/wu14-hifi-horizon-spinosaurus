@@ -1,20 +1,30 @@
 import SigmaButton from "./SigmaButton";
+import { FaSliders } from "react-icons/fa6";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, popular }) {
+  if (!product) return null;
+
   return (
     <figure className="productCard">
       <div className="productCard__img">
-        <img src="https://placehold.co/400" alt="jj" />
+        <img src={product.image} alt={product.name} />
       </div>
       <figcaption className="productCard__content">
-        <p>Auralic Aries G2.1 Streamer</p>
-        <p>{"(Digital Output)"}</p>
-        <h3>£ 4,799.00</h3>
         <div>
-          <SigmaButton text={"Read More"} />
+          <p>{product.name}</p>
+          <p>{`${product["short-des"]}`}</p>
+        </div>
+        <h4>{product.price}</h4>
+        <div className="productCard__content__bottom">
+          <SigmaButton text={popular ? "Read more" : "Add to cart"} />
+          <p>
+            
+          </p>
         </div>
       </figcaption>
-      <button className="productCard__compare">Compare</button>
+      <button className="productCard__compare">
+        Compare <FaSliders className="adjust__icon" size={18} />
+      </button>
     </figure>
   );
 }

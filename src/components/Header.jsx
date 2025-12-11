@@ -20,7 +20,7 @@ export default function Header() {
             onMouseLeave={() => setShopMenu(false)}
             className="header__shop"
           >
-            <NavLink to={"/"}>Shop</NavLink>
+            <NavLink to={"/shop"}>Shop</NavLink>
             {shopMenu && (
               <div className="header__shopMenu">
                 <h2>Browse Categories</h2>

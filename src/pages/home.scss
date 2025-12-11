@@ -25,8 +25,14 @@
             color: $gray4-color;
             text-transform: uppercase;
         }
-
     }
+    .popularProducts__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
 }
 
 

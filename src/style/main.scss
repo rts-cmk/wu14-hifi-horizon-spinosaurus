@@ -10,6 +10,7 @@ a {
     text-decoration: none;
 }
 button {
+    font-family: $font;
     border: none;
     background: none;
 }
@@ -22,6 +23,6 @@ input {
 }
 // ----- Page Styling -----
 body {
-    background-color:  $gray2-color;
+    background-color:  $gray1-color;
     font-family: $font;
 }

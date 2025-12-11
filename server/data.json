@@ -1,292 +1,364 @@
 {
-	"products": [
-		{
-			"id": "cd_afspillere_creek_classic_cd",
-			"category": "cd_afspillere",
-			"name": "Creek Classic CD",
-			"image": "/Produktbilleder/cd_afspillere/creek_classic_cd.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek Classic CD high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "cd_afspillere_creek_destiny_cd",
-			"category": "cd_afspillere",
-			"name": "Creek Destiny CD",
-			"image": "/Produktbilleder/cd_afspillere/creek_Destiny_CD.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek Destiny CD high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "cd_afspillere_creek_evo_cd",
-			"category": "cd_afspillere",
-			"name": "Creek Evo CD",
-			"image": "/Produktbilleder/cd_afspillere/creek_evo_cd.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek Evo CD high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "cd_afspillere_exposure_2010s_cd",
-			"category": "cd_afspillere",
-			"name": "Exposure 2010S CD",
-			"image": "/Produktbilleder/cd_afspillere/Exp_2010S_CD.gif",
-			"price": "£ 4.799,00",
-			"description": "Exposure 2010S CD high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "dvdafspillere_creek_classic",
-			"category": "dvdafspillere",
-			"name": "Creek Classic",
-			"image": "/Produktbilleder/dvdafspillere/creek_classic.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek Classic high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "dvdafspillere_exposure_2010s",
-			"category": "dvdafspillere",
-			"name": "Exposure 2010S",
-			"image": "/Produktbilleder/dvdafspillere/exposure_2010S.jpg",
-			"price": "£ 4.799,00",
-			"description": "Exposure 2010S high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "dvdafspillere_parasound_d200",
-			"category": "dvdafspillere",
-			"name": "Parasound D200",
-			"image": "/Produktbilleder/dvdafspillere/parasound_d200.jpg",
-			"price": "£ 4.799,00",
-			"description": "Parasound D200 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "dvdafspillere_parasound_halo_d3",
-			"category": "dvdafspillere",
-			"name": "Parasound Halo D3",
-			"image": "/Produktbilleder/dvdafspillere/parasound_halod3.jpg",
-			"price": "£ 4.799,00",
-			"description": "Parasound Halo D3 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "effektforstaerkere_manley_mahi",
-			"category": "effektforstaerkere",
-			"name": "Manley Mahi",
-			"image": "/Produktbilleder/effektforstaerkere/manley_mahi.jpg",
-			"price": "£ 4.799,00",
-			"description": "Manley Mahi high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "effektforstaerkere_manley_neoclassic_300b",
-			"category": "effektforstaerkere",
-			"name": "Manley Neo-Classic 300B",
-			"image": "/Produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg",
-			"price": "£ 4.799,00",
-			"description": "Manley Neo-Classic 300B high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "effektforstaerkere_manley_snapper",
-			"category": "effektforstaerkere",
-			"name": "Manley Snapper",
-			"image": "/Produktbilleder/effektforstaerkere/manley_snapper.jpg",
-			"price": "£ 4.799,00",
-			"description": "Manley Snapper high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "effektforstaerkere_parasound_halo_a23",
-			"category": "effektforstaerkere",
-			"name": "Parasound Halo A23",
-			"image": "/Produktbilleder/effektforstaerkere/parasound_haloa23.jpg",
-			"price": "£ 4.799,00",
-			"description": "Parasound Halo A23 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "forforstaerkere_creek_obh22_passive_preamp",
-			"category": "forforstaerkere",
-			"name": "Creek OBH-22 Passive Preamp",
-			"image": "/Produktbilleder/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek OBH-22 Passive Preamp high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "forforstaerkere_parasound_classic_7100",
-			"category": "forforstaerkere",
-			"name": "Parasound Classic 7100",
-			"image": "/Produktbilleder/forforstaerkere/parasound_classic7100.jpg",
-			"price": "£ 4.799,00",
-			"description": "Parasound Classic 7100 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "forforstaerkere_parasound_halo_p3",
-			"category": "forforstaerkere",
-			"name": "Parasound Halo P3",
-			"image": "/Produktbilleder/forforstaerkere/parasound_halop3.jpg",
-			"price": "£ 4.799,00",
-			"description": "Parasound Halo P3 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "forforstaerkere_project_pre_box",
-			"category": "forforstaerkere",
-			"name": "Pro-Ject Pre Box",
-			"image": "/Produktbilleder/forforstaerkere/Project_prebox.jpg",
-			"price": "£ 4.799,00",
-			"description": "Pro-Ject Pre Box high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "hojtalere_boesendorfer_vcs_wall",
-			"category": "hojtalere",
-			"name": "Boesendorfer VCS Wall",
-			"image": "/Produktbilleder/hojtalere/boesendorfer_vcs_wall.gif",
-			"price": "£ 4.799,00",
-			"description": "Boesendorfer VCS Wall high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "hojtalere_epos_m5",
-			"category": "hojtalere",
-			"name": "Epos M5",
-			"image": "/Produktbilleder/hojtalere/epos_m5.gif",
-			"price": "£ 4.799,00",
-			"description": "Epos M5 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "hojtalere_harbeth_hl7_es2",
-			"category": "hojtalere",
-			"name": "Harbeth HL7 ES2",
-			"image": "/Produktbilleder/hojtalere/harbeth_hl7es2.jpg",
-			"price": "£ 4.799,00",
-			"description": "Harbeth HL7 ES2 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "hojtalere_harbeth_monitor_30",
-			"category": "hojtalere",
-			"name": "Harbeth Monitor 30",
-			"image": "/Produktbilleder/hojtalere/harbeth_monitor30.jpg",
-			"price": "£ 4.799,00",
-			"description": "Harbeth Monitor 30 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "hojtalere_harbeth_p3es2",
-			"category": "hojtalere",
-			"name": "Harbeth P3ES2",
-			"image": "/Produktbilleder/hojtalere/harbeth_p3es2.jpg",
-			"price": "£ 4.799,00",
-			"description": "Harbeth P3ES2 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "int_forstaerkere_creek_a50i",
-			"category": "int_forstaerkere",
-			"name": "Creek A50i",
-			"image": "/Produktbilleder/int_forstaerkere/creek_a50I.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek A50i high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "int_forstaerkere_creek_classic_5350se",
-			"category": "int_forstaerkere",
-			"name": "Creek Classic 5350SE",
-			"image": "/Produktbilleder/int_forstaerkere/creek_classic5350SE.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek Classic 5350SE high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "int_forstaerkere_creek_destiny_amp",
-			"category": "int_forstaerkere",
-			"name": "Creek Destiny Amp",
-			"image": "/Produktbilleder/int_forstaerkere/creek_destinyamp.jpg",
-			"price": "£ 4.799,00",
-			"description": "Creek Destiny Amp high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "int_forstaerkere_manley_snapper",
-			"category": "int_forstaerkere",
-			"name": "Manley Snapper",
-			"image": "/Produktbilleder/int_forstaerkere/manley_snapper.jpg",
-			"price": "£ 4.799,00",
-			"description": "Manley Snapper high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "int_forstaerkere_manley_stingray",
-			"category": "int_forstaerkere",
-			"name": "Manley Stingray",
-			"image": "/Produktbilleder/int_forstaerkere/Manley_Stingray.jpg",
-			"price": "£ 4.799,00",
-			"description": "Manley Stingray high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "pladespillere_pro_ject_debut_3_black",
-			"category": "pladespillere",
-			"name": "Pro-Ject Debut 3 Black",
-			"image": "/Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
-			"price": "£ 4.799,00",
-			"description": "Pro-Ject Debut 3 Black high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "pladespillere_pro_ject_debut_iii_red",
-			"category": "pladespillere",
-			"name": "Pro-Ject Debut III Red",
-			"image": "/Produktbilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
-			"price": "£ 4.799,00",
-			"description": "Pro-Ject Debut III Red high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "pladespillere_pro_ject_debut_iii_yellow",
-			"category": "pladespillere",
-			"name": "Pro-Ject Debut III Yellow",
-			"image": "/Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
-			"price": "£ 4.799,00",
-			"description": "Pro-Ject Debut III Yellow high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "pladespillere_pro_ject_rpm_10",
-			"category": "pladespillere",
-			"name": "Pro-Ject RPM 10",
-			"image": "/Produktbilleder/pladespillere/Pro_ject_rpm10.jpg",
-			"price": "£ 4.799,00",
-			"description": "Pro-Ject RPM 10 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "pladespillere_pro_ject_rpm_5",
-			"category": "pladespillere",
-			"name": "Pro-Ject RPM 5",
-			"image": "/Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
-			"price": "£ 4.799,00",
-			"description": "Pro-Ject RPM 5 high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "roer_forstaerkere_jolida_jd102b",
-			"category": "roer_forstaerkere",
-			"name": "Jolida JD102b",
-			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD102b.jpg",
-			"price": "£ 4.799,00",
-			"description": "Jolida JD102b high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "roer_forstaerkere_jolida_jd202a",
-			"category": "roer_forstaerkere",
-			"name": "Jolida JD202a",
-			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg",
-			"price": "£ 4.799,00",
-			"description": "Jolida JD202a high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "roer_forstaerkere_jolida_jd300b",
-			"category": "roer_forstaerkere",
-			"name": "Jolida JD300b",
-			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD300b.jpg",
-			"price": "£ 4.799,00",
-			"description": "Jolida JD300b high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "roer_forstaerkere_jolida_jd302b",
-			"category": "roer_forstaerkere",
-			"name": "Jolida JD302b",
-			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg",
-			"price": "£ 4.799,00",
-			"description": "Jolida JD302b high-fidelity component for discerning listeners."
-		},
-		{
-			"id": "roer_forstaerkere_jolida_jd502b",
-			"category": "roer_forstaerkere",
-			"name": "Jolida JD502b",
-			"image": "/Produktbilleder/roer_forstaerkere/jolida_JD502b.jpg",
-			"price": "£ 4.799,00",
-			"description": "Jolida JD502b high-fidelity component for discerning listeners."
-		}
-	]
+  "products": [
+    {
+      "id": 1,
+      "category": "cd_afspillere",
+      "name": "Creek Classic CD",
+      "image": "/Produktbilleder/cd_afspillere/creek_classic_cd.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Creek Classic CD player is designed for listeners who value clarity, precision, and musicality. With a high-quality digital output, it delivers a clean and accurate signal ready for external DACs or high-end amplifiers. Its solid construction minimizes vibration, ensuring stable playback and consistent performance. Ideal for upgrading any hi-fi system, this player offers detailed sound reproduction with excellent separation and a natural tonal balance. Perfect for both casual listeners and audiophiles looking for a reliable and refined CD source.",
+      "stock": 8
+    },
+    {
+      "id": 2,
+      "category": "cd_afspillere",
+      "name": "Creek Destiny CD",
+      "image": "/Produktbilleder/cd_afspillere/creek_Destiny_CD.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Creek Destiny CD player offers premium performance with a focus on transparency and dynamic expression. Built with high-grade components, it provides smooth playback and excellent resolution across the entire frequency range. Its digital output ensures compatibility with modern DACs and amplifiers, making it suitable for both traditional and contemporary hi-fi setups. Known for its reliability and sonic accuracy, the Destiny series delivers a rich, engaging listening experience that highlights the subtle details in every recording.",
+      "stock": 11
+    },
+    {
+      "id": 3,
+      "category": "cd_afspillere",
+      "name": "Creek Evo CD",
+      "image": "/Produktbilleder/cd_afspillere/creek_evo_cd.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Creek Evo CD player combines elegant design with strong audio performance, making it a superb addition to mid- and high-end stereo systems. It delivers clean, controlled playback with a natural tonality that suits a wide variety of music genres. The Evo’s digital output provides flexibility for users wanting to pair it with external DACs. Its robust build and low-noise circuitry ensure stable performance, offering a clear and immersive soundstage that brings recordings to life with precision and warmth.",
+      "stock": 12
+    },
+    {
+      "id": 4,
+      "category": "cd_afspillere",
+      "name": "Exposure 2010S CD",
+      "image": "/Produktbilleder/cd_afspillere/Exp_2010S_CD.gif",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Exposure 2010S CD player is crafted for enthusiasts who appreciate a refined and musical listening experience. Its advanced digital output ensures accurate signal transfer, while the player’s engineering focuses on low distortion and reliable data reading. Known for its smooth, natural presentation, the 2010S delivers excellent rhythm, timing, and detail. It pairs perfectly with Exposure’s amplifiers but also fits seamlessly into other high-quality systems. Designed for long-term enjoyment, it offers clarity and performance that exceed expectations.",
+      "stock": 10
+    },
+    {
+      "id": 5,
+      "category": "dvdafspillere",
+      "name": "Creek Classic",
+      "image": "/Produktbilleder/dvdafspillere/creek_classic.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Creek Classic DVD player offers more than just video playback — it delivers high-quality digital audio performance suited for both movies and music. With a clean digital output, it integrates well into home cinema or hi-fi systems. The design prioritizes stable operation and precise data reading, ensuring smooth playback and accurate sound reproduction. Even though it’s a DVD player, its audio performance stands out, making it an excellent option for users seeking an affordable yet capable multimedia source.",
+      "stock": 0
+    },
+    {
+      "id": 6,
+      "category": "dvdafspillere",
+      "name": "Exposure 2010S",
+      "image": "/Produktbilleder/dvdafspillere/exposure_2010S.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Exposure 2010S DVD player brings the brand’s well-known sound quality into a versatile multimedia format. Built with solid engineering, it provides stable playback and a reliable digital output for integration with high-end audio systems. Its video performance is crisp and consistent, while the audio output maintains the warmth and clarity Exposure products are known for. This player is a strong choice for users wanting both excellent movie playback and exceptional stereo sound from a single device.",
+      "stock": 13
+    },
+    {
+      "id": 7,
+      "category": "dvdafspillere",
+      "name": "Parasound D200",
+      "image": "/Produktbilleder/dvdafspillere/parasound_d200.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Parasound D200 is a high-performance DVD player designed for audiophiles and home-theater enthusiasts. It delivers clean digital audio output, ensuring compatibility with modern amplifiers and DACs. The D200 excels in detail retrieval, producing clear, dynamic sound that enhances both movies and music. Its durable build and carefully engineered transport mechanism provide reliable playback and longevity. A great choice for users looking for a premium universal player with strong audio capabilities.",
+      "stock": 0
+    },
+    {
+      "id": 8,
+      "category": "dvdafspillere",
+      "name": "Parasound Halo D3",
+      "image": "/Produktbilleder/dvdafspillere/parasound_halod3.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Parasound Halo D3 combines sleek design with high-fidelity playback for both audio and video content. With advanced digital output, it offers precise signal delivery and exceptional clarity, especially when paired with Parasound’s Halo amplifiers. The D3 is engineered for low noise and stable performance, resulting in vivid sound with impressive depth and detail. Whether used in a dedicated home-theater setup or a stereo system, it provides a rich and immersive experience.",
+      "stock": 12
+    },
+    {
+      "id": 9,
+      "category": "effektforstaerkere",
+      "name": "Manley Mahi",
+      "image": "/Produktbilleder/effektforstaerkere/manley_mahi.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Manley Mahi power amplifier brings tube warmth and modern precision together in a compact package. Known for its rich tonal character, it delivers smooth mids, tight bass, and airy highs that appeal to serious audio lovers. The design focuses on musicality and dynamic expression, making it suitable for a wide range of speakers. Its handcrafted build and high-quality components ensure lasting performance. The Mahi is ideal for those seeking the signature tube sound with excellent control and reliability.",
+      "stock": 10
+    },
+    {
+      "id": 10,
+      "category": "effektforstaerkere",
+      "name": "Manley Neo-Classic 300B",
+      "image": "/Produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "The Neo-Classic 300B is a premium tube amplifier celebrated for its musical warmth, emotional presentation, and holographic soundstage. Built around the legendary 300B tube, it delivers lush vocals, organic midrange, and a beautifully natural tone. The amplifier features Manley’s meticulous craftsmanship and robust engineering, ensuring both reliability and exceptional sonic performance. Perfect for high-efficiency speakers, the 300B brings intimate recordings to life with incredible nuance and depth. A true choice for tube-amp purists.",
+      "stock": 6
+    },
+    {
+      "id": 11,
+      "category": "effektforstaerkere",
+      "name": "Manley Snapper",
+      "image": "/Produktbilleder/effektforstaerkere/manley_snapper.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Manley Snapper er en kraftfuld, rørdrevet monoblok, der kombinerer varm klang med massiv kontrol. Den leverer en dynamisk og energisk lyd, perfekt til både rock, jazz og akustiske optagelser. Med sin solide konstruktion og karakteristiske Manley-signatur bliver Snapper hurtigt et centralt element i ethvert high-end system.",
+      "stock": 13
+    },
+    {
+      "id": 12,
+      "category": "effektforstaerkere",
+      "name": "Parasound Halo A23",
+      "image": "/Produktbilleder/effektforstaerkere/parasound_haloa23.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Halo A23 er en kraftfuld og effektiv transistor-effektforstærker med flot dynamik og præcis kontrol. Den er bygget i samarbejde med den legendariske konstruktør John Curl og leverer en neutral, detaljeret lyd med stor transparens. Perfekt som opgradering til stereo- eller hjemmebioopstillinger.",
+      "stock": 0
+    },
+    {
+      "id": 13,
+      "category": "forforstaerkere",
+      "name": "Creek OBH-22 Passive Preamp",
+      "image": "/Produktbilleder/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Creek OBH-22 er en passiv forforstærker designet til dem, der ønsker ekstremt ren signalgang uden unødvendig elektronik. Den giver en naturlig og ufarvet gengivelse, hvor musikkens egne detaljer kommer tydeligt frem. OBH-22 fungerer ideelt i simple, high-resolution opsætninger, hvor minimalisme og lydkvalitet går hånd i hånd.",
+      "stock": 4
+    },
+    {
+      "id": 14,
+      "category": "forforstaerkere",
+      "name": "Parasound Classic 7100",
+      "image": "/Produktbilleder/forforstaerkere/parasound_classic7100.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Classic 7100 er en fleksibel surround-forforstærker med Parasounds velkendte lydkvalitet. Den tilbyder avancerede tilslutningsmuligheder og en ren, kraftfuld digital signalbehandling. Perfekt til hjemmebioentusiaster, der ønsker en solid og stabil løsning med god lyd og nem integration i eksisterende systemer.",
+      "stock": 0
+    },
+    {
+      "id": 15,
+      "category": "forforstaerkere",
+      "name": "Parasound Halo P3",
+      "image": "/Produktbilleder/forforstaerkere/parasound_halop3.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Halo P3 er en musikalsk og detaljeret forforstærker skabt til seriøse stereoopsætninger. Den leverer en åben, klar lyd med lav støj og høj præcision, samtidig med at byggekvaliteten er på toppniveau. Den passer fremragende sammen med Parasounds A-serie effektforstærkere.",
+      "stock": 10
+    },
+    {
+      "id": 16,
+      "category": "forforstaerkere",
+      "name": "Pro-Ject Pre Box",
+      "image": "/Produktbilleder/forforstaerkere/Project_prebox.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Pro-Ject Pre Box er en kompakt, moderne forforstærker med overraskende høj ydeevne. Den er ideel til små hi-fi-opsætninger, hvor pladsen er begrænset, men lydkvaliteten stadig skal være i top. Den leverer en neutral og ren signalbehandling, perfekt til digitale og analoge kilder.",
+      "stock": 13
+    },
+    {
+      "id": 17,
+      "category": "hojtalere",
+      "name": "Boesendorfer VCS Wall",
+      "image": "/Produktbilleder/hojtalere/boesendorfer_vcs_wall.gif",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Boesendorfer VCS Wall er et high-end vægmonteret højttalersystem, designet til æstetik og lydpræcision. Den leverer en åben og detaljeret lyd med klar separation mellem instrumenter og vokaler. Bassens kontrol og diskantens luftighed gør den perfekt til både klassisk musik og moderne indspilninger. Kabinettet er optimeret til minimal resonans, hvilket sikrer en stabil og naturlig lydoplevelse. Et perfekt valg til moderne lyttere med fokus på design og performance.",
+      "stock": 15
+    },
+    {
+      "id": 18,
+      "category": "hojtalere",
+      "name": "Epos M5",
+      "image": "/Produktbilleder/hojtalere/epos_m5.gif",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Epos M5 er en kompakt, men kraftfuld højttaler, der leverer imponerende lyd med præcis midrange og klare høje toner. Den giver en naturlig og dynamisk lydoplevelse, som fremhæver både instrumenter og vokaler. Den er perfekt til små til mellemstore rum og fungerer godt med både rør- og transistorforstærkere. Med sit elegante design og solide byggekvalitet er Epos M5 et populært valg blandt audiofile, der ønsker en balanceret og engagerende lyd.",
+      "stock": 14
+    },
+    {
+      "id": 19,
+      "category": "hojtalere",
+      "name": "Harbeth HL7 ES2",
+      "image": "/Produktbilleder/hojtalere/harbeth_hl7es2.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Harbeth HL7 ES2 er kendt for sin naturlige og musikalske lyd. Denne højttaler leverer en præcis mellemtone og åben diskant, hvilket gør den ideel til vokaler og akustiske optagelser. Basområdet er kontrolleret og ikke dominerende, hvilket skaber en harmonisk helhedsoplevelse. Kabinettet er kompakt og bygget med høj kvalitet, hvilket sikrer minimal resonans. Perfekt til audiofile, der ønsker en ærlig og detaljeret gengivelse af musikken.",
+      "stock": 4
+    },
+    {
+      "id": 20,
+      "category": "hojtalere",
+      "name": "Harbeth Monitor 30",
+      "image": "/Produktbilleder/hojtalere/harbeth_monitor30.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Harbeth Monitor 30 kombinerer stor lydkraft med naturlig musikalsk balance. Den gengiver instrumenter med præcision og giver vokaler en utrolig nærværende klang. Basområdet er dybt og kontrolleret, mens diskanten fremstår luftig og åben. Dette gør Monitor 30 velegnet til både klassisk musik og moderne produktioner. Den robuste konstruktion og elegante finish gør den til et centralt element i ethvert high-end hi-fi-system.",
+      "stock": 15
+    },
+    {
+      "id": 21,
+      "category": "hojtalere",
+      "name": "Harbeth P3ES2",
+      "image": "/Produktbilleder/hojtalere/harbeth_p3es2.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Harbeth P3ES2 er en lille, men fantastisk højttaler, der leverer en klar og musikalsk lydoplevelse. Den fokuserer på naturlig mellemtone og præcis diskant, hvilket gør den ideel til vokal- og akustikoptagelser. Trods sin kompakte størrelse er basen stram og kontrolleret. Den fungerer bedst i mindre rum, hvor dens detaljerige og dynamiske lyd kan udfolde sig. Et fremragende valg for audiofile med fokus på ærlig gengivelse.",
+      "stock": 0
+    },
+    {
+      "id": 22,
+      "category": "int_forstaerkere",
+      "name": "Creek A50i",
+      "image": "/Produktbilleder/int_forstaerkere/creek_a50I.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Creek A50i er en integreret forstærker, der leverer både kraft og finesse. Den kombinerer præcis lydgengivelse med en varm og musikalsk karakter. Med sit robuste design og avancerede interne komponenter tilbyder den lav støj, høj kontrol og naturlig klang. A50i er perfekt til små og mellemstore stereoanlæg og kan drive de fleste højttalere med lethed. En pålidelig og musikalsk integreret løsning til seriøse lyttere.",
+      "stock": 5
+    },
+    {
+      "id": 23,
+      "category": "int_forstaerkere",
+      "name": "Creek Classic 5350SE",
+      "image": "/Produktbilleder/int_forstaerkere/creek_classic5350SE.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Creek Classic 5350SE er en integreret forstærker i high-end-klassen, der leverer klar, detaljeret og dynamisk lyd. Den kombinerer moderne teknologi med klassisk britisk hi-fi-design, hvilket giver en naturlig klang og stor musikalitet. Med tilstrækkelig effekt til mellemstore og store højttalere er den ideel til musikelskere, der ønsker en troværdig og engagerende gengivelse af deres foretrukne indspilninger. Solid byggekvalitet sikrer lang levetid og stabil drift.",
+      "stock": 0
+    },
+    {
+      "id": 24,
+      "category": "int_forstaerkere",
+      "name": "Creek Destiny Amp",
+      "image": "/Produktbilleder/int_forstaerkere/creek_destinyamp.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Creek Destiny Amp er en integreret forstærker, der fokuserer på præcision, detalje og musikalitet. Den leverer en naturlig gengivelse af musikken med tydelig separation mellem instrumenter. Bassens kontrol og diskantens luftighed gør den velegnet til både klassiske og moderne optagelser. Med sit stilrene design og robuste konstruktion er Destiny Amp en perfekt partner til Creek CD-afspillere og andre hi-fi-kilder. Et fremragende valg for audiofile, der vil have både kraft og finesse.",
+      "stock": 0
+    },
+    {
+      "id": 25,
+      "category": "int_forstaerkere",
+      "name": "Manley Snapper",
+      "image": "/Produktbilleder/int_forstaerkere/manley_snapper.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Den integrerede Manley Snapper kombinerer rørbaseret varme med transistorlignende kontrol. Den leverer fyldig mellemtone, luftige højtoner og en dynamisk gengivelse af musikken. Designet sikrer stabilitet og minimal forvrængning, hvilket gør Snapper velegnet til både klassisk musik og moderne indspilninger. Perfekt til audiofile, der ønsker den karakteristiske rørlyd uden at miste præcision eller kontrol over højttalerne.",
+      "stock": 0
+    },
+    {
+      "id": 26,
+      "category": "int_forstaerkere",
+      "name": "Manley Stingray",
+      "image": "/Produktbilleder/int_forstaerkere/Manley_Stingray.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Manley Stingray er en integreret rørforstærker med stor musikalsk autoritet. Den leverer varm og detaljeret lyd, med fyldige mellemtoner og præcis diskant. Stingray er bygget med premium-komponenter og fokuserer på både dynamik og klarhed, hvilket gør den velegnet til højopløste optagelser. Den er ideel til entusiaster, der ønsker en rørbaseret integreret løsning, der kombinerer varme, musikalitet og kontrol.",
+      "stock": 0
+    },
+    {
+      "id": 27,
+      "category": "pladespillere",
+      "name": "Pro-Ject Debut 3 Black",
+      "image": "/Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Pro-Ject Debut 3 Black er en stilren pladespiller, der leverer ren og detaljeret analog lyd. Den er udstyret med et præcist drev og lav vibrationskonstruktion, hvilket sikrer stabil og fejlfri afspilning. Debut 3 er perfekt til begyndere og audiofile, der ønsker en kompromisløs vinyloplevelse. Dens minimalistiske design gør den enkel at integrere i ethvert hi-fi-system, samtidig med at musikken gengives med fylde og dynamik.",
+      "stock": 0
+    },
+    {
+      "id": 28,
+      "category": "pladespillere",
+      "name": "Pro-Ject Debut III Red",
+      "image": "/Produktbilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Pro-Ject Debut III Red er en kvalitetspladespiller, der kombinerer elegant design med detaljeret lydgengivelse. Den præcise motor og støjsvage konstruktion sikrer jævn afspilning og minimal resonans. Debut III leverer en klar og naturlig lyd med fyldige mellemtoner og kontrolleret bas, hvilket gør den ideel til både nybegyndere og erfarne vinylentusiaster. Dens røde finish giver et moderne og stilfuldt look, perfekt til et minimalistisk eller klassisk hi-fi-setup.",
+      "stock": 0
+    },
+    {
+      "id": 29,
+      "category": "pladespillere",
+      "name": "Pro-Ject Debut III Yellow",
+      "image": "/Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Pro-Ject Debut III Yellow kombinerer høj ydeevne med en iøjnefaldende finish. Den leverer en detaljeret og dynamisk analog gengivelse med præcis bas, klar mellemtone og luftig diskant. Drevet og armen er optimeret for lav vibration og stabil afspilning, hvilket sikrer, at hvert spor gengives nøjagtigt. Ideel til vinylentusiaster, der ønsker både pålidelig performance og et visuelt statement i deres hi-fi-opsætning.",
+      "stock": 0
+    },
+    {
+      "id": 30,
+      "category": "pladespillere",
+      "name": "Pro-Ject RPM 10",
+      "image": "/Produktbilleder/pladespillere/Pro_ject_rpm10.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Pro-Ject RPM 10 er en high-end pladespiller med exceptionel præcision og stabilitet. Dens direkte drev og avancerede tonearm sikrer ekstrem nøjagtighed i afspilningen, mens lav resonans og vibration eliminerer unødvendig støj. RPM 10 gengiver musik med utrolig detaljerigdom, fylde og dynamik, hvilket gør den til en favorit blandt audiofile. Et perfekt valg til seriøse vinylentusiaster, der vil have professionel performance hjemme.",
+      "stock": 0
+    },
+    {
+      "id": 31,
+      "category": "pladespillere",
+      "name": "Pro-Ject RPM 5",
+      "image": "/Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Pro-Ject RPM 5 er en alsidig og pålidelig pladespiller med fokus på præcis lydgengivelse. Den kompakte konstruktion og støjreducerende design sikrer klar og ufarvet afspilning. RPM 5 leverer en fyldig mellemtone, kontrolleret bas og en åben diskant, hvilket skaber en naturlig og engagerende lytteoplevelse. Ideel til både begyndere og erfarne vinylbrugere, der ønsker høj kvalitet uden unødvendig kompleksitet.",
+      "stock": 0
+    },
+    {
+      "id": 32,
+      "category": "roer_forstaerkere",
+      "name": "Jolida JD102b",
+      "image": "/Produktbilleder/roer_forstaerkere/jolida_JD102b.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Jolida JD102b er en rørbaseret forstærker, der kombinerer varme, fylde og naturlig musikalitet. Den leverer en præcis mellemtone og luftig diskant med en musikalsk balance, der fremhæver vokaler og instrumenter. JD102b er perfekt til små hi-fi-opsætninger, hvor rørlydens varme og charme kan udfolde sig. Solid konstruktion og pålidelige komponenter sikrer langvarig performance for audiofile, der sætter pris på klassisk rørlyd.",
+      "stock": 0
+    },
+    {
+      "id": 33,
+      "category": "roer_forstaerkere",
+      "name": "Jolida JD202a",
+      "image": "/Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Jolida JD202a er en kraftfuld rørforstærker med dynamisk og levende lyd. Den leverer en organisk mellemtone, kontrolleret bas og en luftig, detaljeret diskant. JD202a er bygget med kvalitetskomponenter og er ideel til lyttere, der ønsker varme og musikalitet i deres system. Den fungerer godt med både små og mellemstore højttalere og skaber en engagerende, levende musikoplevelse, hvor detaljer og stemninger kommer frem.",
+      "stock": 0
+    },
+    {
+      "id": 34,
+      "category": "roer_forstaerkere",
+      "name": "Jolida JD300b",
+      "image": "/Produktbilleder/roer_forstaerkere/jolida_JD300b.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "JD300b er en high-end rørforstærker med fokus på musikalsk præcision og emotionel gengivelse. Den bruger premium 300B-rør for en fyldig, varm lyd med naturlige mellemtoner og glatte højtoner. Basområdet er stramt og kontrolleret, hvilket giver en harmonisk lydoplevelse. JD300b er ideel til audiofile, der ønsker en kompromisløs rørlyd i deres stereo-opsætning, med både styrke og finesse i gengivelsen.",
+      "stock": 1
+    },
+    {
+      "id": 35,
+      "category": "roer_forstaerkere",
+      "name": "Jolida JD302b",
+      "image": "/Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Jolida JD302b leverer kraftfuld og detaljeret rørlyd med fokus på naturlig musikalsk balance. Den fremhæver instrumenter og vokaler med præcision, samtidig med at basen forbliver kontrolleret og fyldig. JD302b er velegnet til medium til high-end højttalere og skaber en engagerende, levende lytteoplevelse. Den kombinerer klassisk rørdesign med moderne konstruktion for maksimal holdbarhed og pålidelighed.",
+      "stock": 1
+    },
+    {
+      "id": 36,
+      "category": "roer_forstaerkere",
+      "name": "Jolida JD502b",
+      "image": "/Produktbilleder/roer_forstaerkere/jolida_JD502b.jpg",
+      "price": "£ 4.799,00",
+      "short-des": "(Digital Output)",
+      "description": "Jolida JD502b er en topklasse rørforstærker, der leverer en detaljefokuseret og varm lydoplevelse. Den er ideel til audiofile, der ønsker maksimal musikalitet, fyldige mellemtoner og luftig diskant. JD502b kombinerer kraft og finesse, hvilket gør den perfekt til både klassiske og moderne optagelser. Med solid konstruktion og premium komponenter sikrer den pålidelig drift og lang levetid i ethvert high-end stereo-setup.",
+      "stock": 1
+    }
+  ]
 }

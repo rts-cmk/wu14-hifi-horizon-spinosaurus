@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import "./style/main.scss";
 
 // Routes 
@@ -7,17 +7,36 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import NotFound from "./components/NotFound";
 import ProductsDetails from "./pages/ProductsDetailed";
+import { ProductDetailLoader } from "./loader";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/productsDetails/:id",
+    element: <ProductsDetails />,
+    loader: ProductDetailLoader,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  }
+]);
 
 export default function App() {
   return (
     <div className="page__wrapper">
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/shop" element={<Shop />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/productsDetails/:id" element={<ProductsDetails />} />
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
+      <RouterProvider router={router} />
     </div>
   );
 }

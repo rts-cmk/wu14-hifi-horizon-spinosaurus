@@ -1,0 +1,33 @@
+@use '../style/variables.scss' as *;
+.aboutpage__wrapper {
+    padding: 20px 35px;
+    h2 {
+        text-transform: uppercase;
+        font-size: 48px;
+        color: $gray4-color;
+    }
+    .about {
+        padding: 20px;
+        background-color: white;
+    }
+    .about__sec {
+        display: flex;
+        gap: 50px;
+        img {
+            width: 50%;
+        }
+        .about__sec__content {
+            h3 {
+                margin-bottom: 20px;
+            }
+            text-align: center;
+            width: 50%;
+            p {
+                margin-bottom: 15px;
+            }
+            p:nth-child(2){
+                color: $appelsin-color;
+            }
+        }
+    }
+}

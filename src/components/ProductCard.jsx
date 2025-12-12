@@ -1,7 +1,8 @@
+import { Link } from "react-router";
 import SigmaButton from "./SigmaButton";
-import { FaSliders } from "react-icons/fa6";
-
+import { useNavigate } from "react-router";
 export default function ProductCard({ product, popular }) {
+  const navigate = useNavigate();
   if (!product) return null;
 
   const getStockStatus = (stock) => {
@@ -13,7 +14,10 @@ export default function ProductCard({ product, popular }) {
   const stockStatus = getStockStatus(product.stock);
 
   return (
-    <figure className="productCard">
+    <figure
+      onClick={() => navigate(`/productsDetails/${product.id}`)}
+      className={`productCard ${popular ? "popular" : ""}`}
+    >
       <div className="productCard__img">
         <img src={product.image} alt={product.name} />
       </div>
@@ -25,19 +29,22 @@ export default function ProductCard({ product, popular }) {
         <h4>{product.price}</h4>
         <div className="productCard__content__bottom">
           <SigmaButton text={popular ? "Read more" : "Add to cart"} />
-          <p>
-            {stockStatus}
-            <span
-              className={`stock__circle ${
-                product.stock === 0 ? "red" : product.stock <= 3 ? "orange" : "green"
-              }`}
-            ></span>
-          </p>
+          {!popular && (
+            <p>
+              {stockStatus}
+              <span
+                className={`stock__circle ${
+                  product.stock === 0
+                    ? "red"
+                    : product.stock <= 3
+                    ? "orange"
+                    : "green"
+                }`}
+              ></span>
+            </p>
+          )}
         </div>
       </figcaption>
-      <button className="productCard__compare">
-        Compare <FaSliders className="adjust__icon" size={18} />
-      </button>
     </figure>
   );
 }

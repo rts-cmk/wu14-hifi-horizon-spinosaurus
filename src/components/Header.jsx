@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import "./Header.scss";
@@ -93,18 +93,18 @@ export default function Header() {
       <div className={`burgerOpen ${burgerMenu ? "open" : ""}`}>
         <ul>
           <li>
+            <Link to="/">
             <img src="/logo_hifi.svg" alt="" />
+            </Link>
           </li>
           <li>
             <NavLink to={"/shop"}>Shop</NavLink>
           </li>
           <li>
-            <NavLink to={"/about"} />
-            About us
+            <NavLink to={"/about"}>About us</NavLink>
           </li>
           <li>
-            <NavLink to={"/contact"} />
-            Contact us
+            <NavLink to={"/contact"}>Contact us</NavLink>
           </li>
         </ul>
       </div>

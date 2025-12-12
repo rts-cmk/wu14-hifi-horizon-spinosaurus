@@ -6,9 +6,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 export default function Shop() {
   const [sortBrand, setSortBrand] = useState(false);
-  const [sortCategory, setSortCategory] = useState(false);
-  const [selectedBrands, setSelectedBrands] = useState([]);
-  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [sortColor, setSortColor] = useState(false);
+  const [sortPrice, setSortPrice] = useState();
   const [products, setProducts] = useState([]);
 
   // Get products
@@ -18,38 +17,10 @@ export default function Shop() {
       .then((data) => setProducts(data.products));
   }, []);
 
-  // Get unique brands and categories
-  const brands = useMemo(() => {
-    return [...new Set(products.map((p) => p.name.split(" ")[0]))].sort();
-  }, [products]);
+  // Brands and Colors
+  const brands = ["SteelSeries", "Logitech", "Apple"];
 
-  const categories = useMemo(() => {
-    return [...new Set(products.map((p) => p.category))].sort();
-  }, [products]);
-
-  // Filter products based on selections
-  const filteredProducts = useMemo(() => {
-    return products.filter((product) => {
-      const brand = product.name.split(" ")[0];
-      const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(brand);
-      const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(product.category);
-      return matchesBrand && matchesCategory;
-    });
-  }, [products, selectedBrands, selectedCategories]);
-
-  const handleBrandChange = (brand) => {
-    setSelectedBrands((prev) =>
-      prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand]
-    );
-  };
-
-  const handleCategoryChange = (category) => {
-    setSelectedCategories((prev) =>
-      prev.includes(category)
-        ? prev.filter((c) => c !== category)
-        : [...prev, category]
-    );
-  };
+  const colors = ["Black", "White", "Gray"];
 
   return (
     <>
@@ -67,15 +38,14 @@ export default function Shop() {
                 <p>Brand</p>
                 <FaAngleDown className={sortBrand ? "rotated" : ""} />
               </div>
-              <ul className={`sort__by__type__wrapper ${sortBrand ? "open" : ""}`}>
+              <ul
+                className={`sort__by__type__wrapper ${sortBrand ? "open" : ""}`}
+              >
                 {brands.map((brand) => (
                   <li key={brand}>
-                    {brand}
-                    <input
-                      type="checkbox"
-                      checked={selectedBrands.includes(brand)}
-                      onChange={() => handleBrandChange(brand)}
-                    />
+                    <label className="nigga" htmlFor={brand}>
+                      {brand} <input id={brand} name={brand} type="checkbox" />
+                    </label>
                   </li>
                 ))}
               </ul>
@@ -83,28 +53,64 @@ export default function Shop() {
 
             <div className="sort__by">
               <div
-                onClick={() => setSortCategory((prev) => !prev)}
+                onClick={() => setSortColor((prev) => !prev)}
                 className="sort__by__type"
               >
-                <p>Category</p>
-                <FaAngleDown className={sortCategory ? "rotated" : ""} />
+                <p>Colors</p>
+                <FaAngleDown className={sortColor ? "rotated" : ""} />
               </div>
-              <ul className={`sort__by__type__wrapper ${sortCategory ? "open" : ""}`}>
-                {categories.map((category) => (
-                  <li key={category}>
-                    {category}
-                    <input
-                      type="checkbox"
-                      checked={selectedCategories.includes(category)}
-                      onChange={() => handleCategoryChange(category)}
-                    />
+              <ul
+                className={`sort__by__type__wrapper ${sortColor ? "open" : ""}`}
+              >
+                {colors.map((color) => (
+                  <li key={color}>
+                    <label htmlFor={color}>
+                      {color}
+                      <input name={color} id={color} type="checkbox" />
+                    </label>
                   </li>
                 ))}
               </ul>
             </div>
+            <div className="sort__by">
+              <div
+                onClick={() => setSortPrice((prev) => !prev)}
+                className="sort__by__type"
+              >
+                <p>Price</p>
+                <FaAngleDown className={sortPrice ? "rotated" : ""} />
+              </div>
+              <div
+                className={`sort__by__type__wrapper ${sortPrice ? "open" : ""}`}
+              >
+                <div className="price">
+                  <div className="price__box">
+                    <input
+                      className="price__input"
+                      type="number"
+                      min={50}
+                      max={10000}
+                    />
+                    <span>kr</span>
+                  </div>
+
+                  <span className="price__dash">-</span>
+
+                  <div className="price__box">
+                    <input
+                      className="price__input"
+                      type="number"
+                      min={50}
+                      max={10000}
+                    />
+                    <span>kr</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="products__wrapper">
-            {filteredProducts.map((product) => (
+            {products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>

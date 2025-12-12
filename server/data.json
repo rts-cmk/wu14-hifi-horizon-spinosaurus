@@ -9,7 +9,7 @@
       "short-des": "(Digital Output)",
       "description": "Creek Classic CD er en digital CD-afspiller med fremragende lydkvalitet og præcision. Den leverer klar mellemtone, kontrolleret bas og åben diskant, hvilket gør den perfekt til både klassisk og moderne musik. Med sit elegante design og pålidelige komponenter er den ideel til seriøse musiklyttere, der ønsker en kompromisløs afspilning af deres yndlings-CD'er.",
       "stock": 8,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
     {
@@ -21,7 +21,7 @@
       "short-des": "(Digital Output)",
       "description": "Creek Destiny CD kombinerer moderne digitalteknologi med klassisk britisk hi-fi-design. Den gengiver musik med imponerende klarhed, dynamik og præcision, hvilket gør hver afspilning levende og detaljeret. Ideel til audiofile, der ønsker både kraftfuld og naturlig lyd fra deres CD-samling.",
       "stock": 2,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
     {
@@ -33,7 +33,7 @@
       "short-des": "(Digital Output)",
       "description": "Creek Evo CD tilbyder en fremragende lydoplevelse med klar diskant og fyldig mellemtone. Dens digitale output sikrer minimal støj og maksimal detaljerigdom, hvilket gør den ideel til kvalitetsbevidste musiklyttere. Designet er elegant og tidløst, perfekt til både moderne og klassiske hi-fi-opsætninger.",
       "stock": 12,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
     {
@@ -45,7 +45,7 @@
       "short-des": "(Digital Output)",
       "description": "Exposure 2010S CD leverer detaljeret og naturlig lyd med præcis mellemtone og kontrolleret bas. Den kombinerer avanceret digitalteknologi med elegant hi-fi-design og er perfekt til musikelskere, der ønsker en troværdig gengivelse af deres yndlings-CD'er uden kompromis.",
       "stock": 10,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
     {
@@ -57,7 +57,7 @@
       "short-des": "(Digital Output)",
       "description": "Creek Classic DVD-afspiller leverer stabil og pålidelig digital afspilning med klar lyd og præcis billedehåndtering. Ideel til hjemmebiografentusiaster, der ønsker en kompromisløs oplevelse af både film og musik.",
       "stock": 0,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
     {
@@ -69,7 +69,7 @@
       "short-des": "(Digital Output)",
       "description": "Exposure 2010S DVD kombinerer elegant design med præcis digital lydgengivelse. Den leverer både klare billeder og detaljeret lyd, hvilket gør den til et solidt valg for hi-fi og hjemmebiografentusiaster.",
       "stock": 13,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
     {
@@ -81,7 +81,7 @@
       "short-des": "(Digital Output)",
       "description": "Parasound D200 leverer stabil og klar digital lyd med minimal støj. Med høj ydeevne og pålidelig konstruktion er den ideel til både musik og film i hjemmebiografer, hvor kvalitet og præcision er vigtig.",
       "stock": 0,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
     {
@@ -93,7 +93,7 @@
       "short-des": "(Digital Output)",
       "description": "Parasound Halo D3 kombinerer avanceret digitalteknologi med ren lyd og præcis billedhåndtering. Perfekt til musik- og filmentusiaster, der ønsker kompromisløs kvalitet i både lyd og design.",
       "stock": 12,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
     {
@@ -105,7 +105,7 @@
       "short-des": "(Digital Output)",
       "description": "Manley Mahi er en high-end effektforstærker med kraftfuld og præcis lyd. Den leverer fyldig mellemtone og klar diskant med minimal forvrængning, hvilket gør den perfekt til audiofile, der ønsker maksimal kontrol over højttalerne.",
       "stock": 10,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
     {
@@ -117,7 +117,7 @@
       "short-des": "(Digital Output)",
       "description": "Manley Neo-Classic 300B kombinerer rørlydens varme med præcis kontrol. Effektforstærkeren leverer fyldige mellemtoner, luftig diskant og dynamik, perfekt til musikalske og detaljerige lytteoplevelser.",
       "stock": 6,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
     {
@@ -129,7 +129,7 @@
       "short-des": "",
       "description": "Parasound A21 er en kraftfuld og præcis effektforstærker, der leverer detaljeret lyd med massiv dynamik. Den er perfekt til højttalere i den tungere ende og giver en stabil, rig og kontrolleret musikoplevelse.",
       "stock": 9,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -142,7 +142,7 @@
       "short-des": "",
       "description": "Parasound A23 giver en ren og præcis lydgengivelse med fremragende kontrol i hele frekvensområdet. Ideel til mellemstore hi-fi-opsætninger og audiofile, der ønsker detaljer og dynamik.",
       "stock": 4,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -155,7 +155,7 @@
       "short-des": "",
       "description": "Halo JC1 er Parasounds flagskib og leverer ekstrem kraft, præcision og kontrol. Dette er en af verdens mest anerkendte monoblokke og perfekt til high-end opsætninger.",
       "stock": 2,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
 
@@ -168,7 +168,7 @@
       "short-des": "",
       "description": "Vincent SP-991 er en tung og kraftig effektforstærker, der leverer varm, fyldig og dynamisk lyd. Ideel til store højttalere og musikelskere der ønsker fuld kontrol.",
       "stock": 7,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -181,7 +181,7 @@
       "short-des": "",
       "description": "Vincent SP-331 kombinerer rør- og transistorlyd i en hybrid konstruktion. Den giver både varme og kraft og leverer smuk, musikalsk lyd med stor dynamik.",
       "stock": 12,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -194,7 +194,7 @@
       "short-des": "",
       "description": "Pro-Ject Pre Box er en kompakt, alsidig forforstærker, der leverer ren og præcis lyd i små og mellemstore hi-fi-opsætninger. Den håndterer både digitale og analoge kilder med lav støj og høj detaljeringsgrad, hvilket gør musikken klar og naturlig. Ideel til dem, der ønsker maksimal lydkvalitet i en kompakt pakke.",
       "stock": 13,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -207,7 +207,7 @@
       "short-des": "",
       "description": "Boesendorfer VCS Wall er et vægmonteret high-end højttalersystem med en åben, detaljeret og naturlig lydgengivelse. Designet kombinerer æstetik og teknisk præcision for en harmonisk helhedsoplevelse.",
       "stock": 7,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
 
@@ -220,7 +220,7 @@
       "short-des": "",
       "description": "Epos M5 er en kompakt og præcis højttaler med fremragende mellemtoner og klar diskant. Ideel til små og mellemstore rum, hvor naturlig og dynamisk gengivelse prioriteres.",
       "stock": 10,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -233,7 +233,7 @@
       "short-des": "",
       "description": "Harbeth HL7 ES2 leverer naturlig og musikalsk lyd med en præcis mellemtone og åben diskant. Perfekt til dem, der søger ærlig gengivelse og høj lydkvalitet.",
       "stock": 8,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
 
@@ -246,7 +246,7 @@
       "short-des": "",
       "description": "Harbeth Monitor 30 kombinerer stor lydkraft med naturlig musikalsk balance. Den leverer en imponerende præcis gengivelse af instrumenter og vokaler.",
       "stock": 9,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -259,7 +259,7 @@
       "short-des": "",
       "description": "Harbeth P3ES2 er en lille, men utrolig præcis højttaler med naturlig mellemtone og detaljeret diskant. Perfekt til mindre rum og seriøse lyttere.",
       "stock": 6,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -272,7 +272,7 @@
       "short-des": "",
       "description": "Creek A50i er en integreret forstærker, der leverer både kraft og finesse. Den kombinerer præcis lydgengivelse med en varm og musikalsk karakter. Ideel til de fleste højttalere.",
       "stock": 11,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
 
@@ -285,7 +285,7 @@
       "short-des": "",
       "description": "Creek Classic 5350SE er en integreret forstærker i high-end klassen, med naturlig klang og stærk musikalitet. Perfekt til dem, der ønsker detaljer og dynamik.",
       "stock": 14,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -298,7 +298,7 @@
       "short-des": "",
       "description": "Creek Destiny Amp kombinerer præcision og varme i en elegant konstruktion. Lyden er detaljeret, åben og dynamisk, perfekt til seriøse audiofile.",
       "stock": 10,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -311,7 +311,7 @@
       "short-des": "",
       "description": "Manley Snapper Integrated kombinerer rørvarme og præcision. Den leverer fyldig mellemtone, luftige højtoner og en dynamisk musikoplevelse.",
       "stock": 5,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
 
@@ -324,7 +324,7 @@
       "short-des": "",
       "description": "Manley Stingray er en ikonisk rørforstærker med varm og levende gengivelse. Den leverer detaljer, dybde og musikalitet i topklasse.",
       "stock": 3,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -337,7 +337,7 @@
       "short-des": "",
       "description": "Pro-Ject Debut 3 Black leverer detaljeret og ren analog lyd. Den er perfekt til både begyndere og entusiaster og tilbyder stabil afspilning og lav resonans.",
       "stock": 9,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -350,7 +350,7 @@
       "short-des": "",
       "description": "Pro-Ject Debut III Red leverer dynamisk og detaljeret vinylgengivelse med stabil drift og lav vibration. Dens røde finish gør den til et stilrent valg i ethvert setup.",
       "stock": 7,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -363,7 +363,7 @@
       "short-des": "",
       "description": "Pro-Ject Debut III Yellow kombinerer stærk lydkvalitet med et iøjnefaldende design. Den reducerer resonans effektivt og leverer klar, fyldig og åben lyd.",
       "stock": 12,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
 
@@ -376,7 +376,7 @@
       "short-des": "",
       "description": "Pro-Ject RPM 10 er en high-end pladespiller med ekstrem præcision, lav resonans og imponerende detaljeniveau. En favorit blandt audiofile.",
       "stock": 3,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -389,7 +389,7 @@
       "short-des": "",
       "description": "Pro-Ject RPM 5 leverer naturlig og præcis lyd med lav vibration og stærk konstruktion. Perfekt til både nybegyndere og high-end brugere.",
       "stock": 11,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -402,7 +402,7 @@
       "short-des": "",
       "description": "Jolida JD102b leverer varm og naturlig rørlyd med fremragende detaljer i mellemtonen. Ideel til mindre opsætninger og intime lytteoplevelser.",
       "stock": 8,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     },
 
@@ -415,7 +415,7 @@
       "short-des": "",
       "description": "Jolida JD202a leverer en kombination af varme, detaljer og dynamik. Et stærkt valg for dem, der ønsker ægte rørkarakter og musikalsk gengivelse.",
       "stock": 6,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -428,7 +428,7 @@
       "short-des": "",
       "description": "Jolida JD300b bruger premium 300B-rør for en varm, rig og naturlig gengivelse. Perfekt til audiofile der ønsker den ægte 300B lydsignatur.",
       "stock": 4,
-      "color": "black",
+      "color": ["silver", "grey", "black"],
       "brand": "logitech"
     },
 
@@ -441,7 +441,7 @@
       "short-des": "",
       "description": "Jolida JD302b leverer en levende, dynamisk og detaljeret rørlyd med naturlig musikalitet. Ideel til hobbyister og seriøse entusiaster.",
       "stock": 10,
-      "color": "white",
+      "color": ["silver", "grey", "black"],
       "brand": "steelseries"
     },
 
@@ -454,7 +454,7 @@
       "short-des": "",
       "description": "Jolida JD502b er en kraftigere rørforstærker, der kombinerer varme og stærk dynamik. Perfekt til store højttalere og musik med energi.",
       "stock": 5,
-      "color": "grey",
+      "color": ["silver", "grey", "black"],
       "brand": "apple"
     }
   ]

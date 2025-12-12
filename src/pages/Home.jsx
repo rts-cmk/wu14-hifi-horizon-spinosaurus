@@ -31,7 +31,7 @@ export default function Home() {
       <section className="popularProducts">
         <div className="popularProducts__top">
           <h2>Popular products</h2>
-          <Link>
+          <Link to="/shop">
             <SigmaButton text={"See all products"} />
           </Link>
         </div>

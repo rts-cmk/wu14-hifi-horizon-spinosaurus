@@ -7,6 +7,7 @@
     margin: 0;
 }
 a {
+    color: black;
     text-decoration: none;
 }
 button {
@@ -20,6 +21,10 @@ ul {
 
 input {
     border: none;
+}
+input:focus {
+    border: none;
+    outline: none;
 }
 // ----- Page Styling -----
 body {

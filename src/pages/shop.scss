@@ -4,7 +4,7 @@
   padding: 35px;
   h2 {
     font-size: 48px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: $gray4-color;
   }
 }
@@ -21,12 +21,14 @@
   h3 {
     font-weight: normal;
     margin-bottom: 10px;
+    margin-left: 7px;
   }
 
   .sort__by {
     margin-bottom: 15px;
   }
 
+  // Sort by type
   .sort__by__type {
     padding: 7px;
     display: flex;
@@ -35,7 +37,9 @@
     background-color: $gray2-color;
     cursor: pointer;
     user-select: none;
-
+    position: relative;
+    z-index: 67;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     svg {
       transition: transform 0.3s ease;
 
@@ -44,7 +48,7 @@
       }
     }
   }
-
+  //
   .sort__by__type__wrapper {
     list-style: none;
     padding: 0;
@@ -52,14 +56,14 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background-color: $gray1-color;
+    background-color: $gray2-color;
 
     &.open {
       max-height: 500px;
     }
 
-    li {
-      padding: 8px 10px;
+    label {
+      padding: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -67,20 +71,44 @@
       cursor: pointer;
 
       &:hover {
-        background-color: $gray2-color;
+        background-color: rgb(225, 225, 225);
       }
-
-      input[type="checkbox"] {
-        cursor: pointer;
-      }
+    }
+    // Price
+    .price {
+      padding: 7px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .price__box {
+      border-radius: 5px;
+      background-color: #fafafa;
+      padding: 4px 8px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .price__input {
+      background-color: #fafafa;
+      width: 70px;
+      padding: 5px;
+    }
+    .price__input::-webkit-outer-spin-button,
+    .price__input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
   }
 }
 
+
 // ----- Products -----
 .products__wrapper {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   flex: 1;
 }
+

@@ -23,17 +23,19 @@ export default function Header() {
             <NavLink to={"/shop"}>Shop</NavLink>
             {shopMenu && (
               <div className="header__shopMenu">
-                <h2>Browse Categories</h2>
-                <ul>
-                  <li>CD Players</li>
-                  <li>DVD Players</li>
-                  <li>Preamps</li>
-                  <li>Speakers</li>
-                  <li>Turntables</li>
-                  <li>Integrated Amplifiers</li>
-                  <li>Power Amplifiers</li>
-                  <li>Tube Amplifiers</li>
-                </ul>
+                <div className="header__shopMenu__content">
+                  <NavLink to="/shop"><h2>Browse Categories</h2></NavLink>
+                  <ul>
+                    <li>CD Players</li>
+                    <li>DVD Players</li>
+                    <li>Preamps</li>
+                    <li>Speakers</li>
+                    <li>Turntables</li>
+                    <li>Integrated Amplifiers</li>
+                    <li>Power Amplifiers</li>
+                    <li>Tube Amplifiers</li>
+                  </ul>
+                </div>
               </div>
             )}
           </li>
@@ -94,7 +96,7 @@ export default function Header() {
         <ul>
           <li>
             <Link to="/">
-            <img src="/logo_hifi.svg" alt="" />
+              <img src="/logo_hifi.svg" alt="" />
             </Link>
           </li>
           <li>

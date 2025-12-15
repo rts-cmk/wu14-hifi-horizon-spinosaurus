@@ -1,12 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import "./style/main.scss";
 
-// Routes 
+// Routes
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import About from "./pages/About";
 import NotFound from "./components/NotFound";
 import ProductsDetails from "./pages/ProductsDetailed";
+import FAQ from "./pages/FAQ";
 import { ProductDetailLoader } from "./loader";
 
 const router = createBrowserRouter([
@@ -28,9 +29,13 @@ const router = createBrowserRouter([
     loader: ProductDetailLoader,
   },
   {
+    path: "/faq",
+    element: <FAQ />,
+  },
+  {
     path: "*",
     element: <NotFound />,
-  }
+  },
 ]);
 
 export default function App() {

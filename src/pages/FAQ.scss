@@ -1,0 +1,34 @@
+@use "../style/variables.scss" as *;
+
+.FAQ {
+    padding: 2rem;
+    background: $gray1-color;
+    max-width: 75rem;
+    margin: 0 auto 2rem auto;
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    color: $gray4-color;
+  }
+  &__main {
+    background: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    section {
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+    &__firstSec {
+        &__p1 {
+            font-size: 24px;
+        }
+    }
+    #no-margin {
+        margin: 0;
+    }
+  }
+}

@@ -9,6 +9,7 @@ import {
   FaCcMastercard,
 } from "react-icons/fa";
 import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
 import "./Footer.scss";
 
 export default function Footer() {
@@ -27,10 +28,10 @@ export default function Footer() {
           </li>
         </ul>
         <ul className="footer__ul">
-          <li className="footer__ul__list">Returns & Refunds</li>
-          <li className="footer__ul__list">Delivery</li>
-          <li className="footer__ul__list">Privacy Policy</li>
-          <li className="footer__ul__list">Terms & Conditions</li>
+          <li className="footer__ul__list"><HashLink to={"/faq#returns"}>Returns & Refunds</HashLink></li>
+          <li className="footer__ul__list"><HashLink to={"/faq#delivery"}>Delivery</HashLink></li>
+          <li className="footer__ul__list"><HashLink to={"/faq#privacy"}>Privacy Policy</HashLink></li>
+          <li className="footer__ul__list"><HashLink to={"/faq#terms"}>Terms & Conditions</HashLink></li>
         </ul>
         <ul className="footer__ul">
           <h3 className="footer__ul__h3">Contact</h3>
@@ -97,10 +98,10 @@ export default function Footer() {
           </li>
         </ul>
         <div className="footer__div__container">
-          <p className="footer__div__container__p">
+          <address className="footer__div__container__p">
             HiFi Horizon (Edinburgh) Ltd is registered in Scotland. No:
             SC049298. Registered office: 2 Joppa Rd, Edinburgh EH15 2EU
-          </p>
+          </address>
           <p className="footer__div__container__p">Designed by WU14 :)</p>
         </div>
       </div>

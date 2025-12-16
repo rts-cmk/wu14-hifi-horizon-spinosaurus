@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
-import Header from "../components/Header";
+import { useEffect, useState, useRef } from "react";
 import { useLoaderData } from "react-router";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaPlus, FaMinus, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { FaSliders } from "react-icons/fa6";
+
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 import "./productsDetailed.scss";
 
@@ -31,14 +33,50 @@ export default function ProductsDetails() {
     }
   }, []);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const slidesRef = useRef(null);
+  const totalSlides = products.image.length;
+
+  const updateSlide = (index) => {
+    slidesRef.current.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  const nextSlide = () => {
+    const newIndex = (currentIndex + 1) % totalSlides;
+    setCurrentIndex(newIndex);
+    updateSlide(newIndex);
+  };
+
+  const prevSlide = () => {
+    const newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    setCurrentIndex(newIndex);
+    updateSlide(newIndex);
+  };
+
   return (
     <>
       <Header />
-      <div className="productsDetails">
+      <main className="productsDetails">
         <h1 className="productsDetails__title">product</h1>
         <section className="productsDetails__section">
-          <figure className="productsDetails__section__figure">
-            <img src={products.image} alt="" />
+          <figure className="productsDetails__section__figure slider">
+            <button id="prevBtn" onClick={prevSlide}>
+              <FaAngleLeft />
+            </button>
+            <div className="slider_container">
+              <div className="slides" ref={slidesRef}>
+                {products.image.map((img, index) => {
+                  return (
+                    <div className="slide">
+                      <img key={index} src={img} />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            <button id="nextBtn" onClick={nextSlide}>
+              <FaAngleRight />
+            </button>
           </figure>
           <div className="productsDetails__section__info">
             <button className="productCard__compare">
@@ -155,7 +193,9 @@ export default function ProductsDetails() {
             </div>
           </div>
         </section>
-      </div>
+      </main>
+      <div className="border" />
+      <Footer />
     </>
   );
 }

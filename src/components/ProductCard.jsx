@@ -19,7 +19,7 @@ export default function ProductCard({ product, popular }) {
       className={`productCard ${popular ? "popular" : ""}`}
     >
       <div className="productCard__img">
-        <img src={product.image} alt={product.name} />
+        <img src={product.image[0]} alt={product.name} />
       </div>
       <figcaption className="productCard__content">
         <div>

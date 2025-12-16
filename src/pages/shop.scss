@@ -74,6 +74,44 @@
         background-color: rgb(225, 225, 225);
       }
     }
+    // Checkbox
+    .checkbox {
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .checkbox input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .checkmark {
+      background-color: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .checkmark::after {
+      content: "";
+      width: 6px;
+      height: 10px;
+      border: solid #0e7718;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg) translate(-1px, -1px);
+      opacity: 0;
+    }
+
+    .checkbox input:checked + .checkmark::after {
+      opacity: 1;
+    }
+
     // Price
     .price {
       padding: 7px;
@@ -102,7 +140,6 @@
   }
 }
 
-
 // ----- Products -----
 .products__wrapper {
   display: flex;
@@ -111,4 +148,3 @@
   gap: 20px;
   flex: 1;
 }
-

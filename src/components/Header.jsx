@@ -21,23 +21,6 @@ export default function Header() {
             className="header__shop"
           >
             <NavLink to={"/shop"}>Shop</NavLink>
-            {shopMenu && (
-              <div className="header__shopMenu">
-                <div className="header__shopMenu__content">
-                  <NavLink to="/shop"><h2>Browse Categories</h2></NavLink>
-                  <ul>
-                    <li>CD Players</li>
-                    <li>DVD Players</li>
-                    <li>Preamps</li>
-                    <li>Speakers</li>
-                    <li>Turntables</li>
-                    <li>Integrated Amplifiers</li>
-                    <li>Power Amplifiers</li>
-                    <li>Tube Amplifiers</li>
-                  </ul>
-                </div>
-              </div>
-            )}
           </li>
           <li>
             <NavLink to={"/about"}>About us</NavLink>
@@ -61,6 +44,31 @@ export default function Header() {
             <FaShoppingCart color="white" size={25} />
           </li>
         </ul>
+        {shopMenu && (
+          <div
+            onMouseEnter={() => setShopMenu(true)}
+            onMouseLeave={() => setShopMenu(false)}
+            className="header__shopMenu"
+          >
+            <div className="header__shopMenu__content">
+              <ul>
+                <li>
+                  <NavLink to="/shop">
+                    <h2>Browse Categories</h2>
+                  </NavLink>
+                </li>
+                <li>CD Players</li>
+                <li>DVD Players</li>
+                <li>Preamps</li>
+                <li>Speakers</li>
+                <li>Turntables</li>
+                <li>Integrated Amplifiers</li>
+                <li>Power Amplifiers</li>
+                <li>Tube Amplifiers</li>
+              </ul>
+            </div>
+          </div>
+        )}
       </header>
       {/* NavBarPhone*/}
       <div className="navBar">

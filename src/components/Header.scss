@@ -4,6 +4,7 @@
   display: none;
 }
 .header {
+  position: relative;
   padding: 15px 35px;
   background-color: black;
   display: flex;
@@ -30,7 +31,6 @@
     }
     li:nth-child(n + 2) a:after {
       transition: width 0.3s ease-in-out;
-
       position: absolute;
       content: "";
       bottom: 0;
@@ -47,7 +47,7 @@
     }
   }
 
-  // Header shop hover menu
+  // ----- Header Shop Menu -----
   .header__shop {
     position: relative;
   }
@@ -55,40 +55,37 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translate(-3%, 100%);
+    transform: translate(30%, 93%);
     z-index: 999;
     padding-top: 20px;
   }
   .header__shopMenu__content {
     position: relative;
-    padding: 20px;
     background-color: white;
     width: 350px;
-    height: 450px;
-    a:nth-child(1) {
-      font-size: 20px;
-      color: #333;
-      text-transform: capitalize;
-      &:hover {
-        color: black;
-      }
-    }
     h2 {
-      margin-bottom: 20px;
+      font-size: 28px;
+      color: black;
     }
     ul {
       display: flex;
       flex-direction: column;
-      gap: 15px;
       li {
+        padding: 15px;
         font-size: 22px;
+      }
+      li:nth-child(n+2){
         color: $golden-color;
       }
-
+      li:hover {
+        cursor: pointer;
+        background-color: rgb(230, 230, 230);
+      }
     }
   }
-  .header__shopMenu__content::after {
+  .header__shopMenu__content::before {
     content: "";
+    z-index: -1;
     position: absolute;
     background-color: white;
     top: -5px;
@@ -98,7 +95,7 @@
     height: 10px;
   }
 
-  // Header Tools
+  // ----- Header Tools -----
   .header__tools {
     display: flex;
     align-items: center;

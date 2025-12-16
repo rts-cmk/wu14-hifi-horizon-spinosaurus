@@ -43,8 +43,9 @@ export default function Shop() {
               >
                 {brands.map((brand) => (
                   <li key={brand}>
-                    <label className="nigga" htmlFor={brand}>
+                    <label className="checkbox" htmlFor={brand}>
                       {brand} <input id={brand} name={brand} type="checkbox" />
+                      <span className="checkmark" />
                     </label>
                   </li>
                 ))}

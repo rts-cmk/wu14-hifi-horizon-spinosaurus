@@ -1,5 +1,5 @@
 import { FaAngleDown } from "react-icons/fa6";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import "./shop.scss";
 import Header from "../components/Header";
@@ -9,6 +9,10 @@ export default function Shop() {
   const [sortColor, setSortColor] = useState(false);
   const [sortPrice, setSortPrice] = useState();
   const [products, setProducts] = useState([]);
+  const [selectedBrands, setSelectedBrands] = useState([]);
+  const [selectedColors, setSelectedColors] = useState([]);
+  const [minPrice, setMinPrice] = useState('');
+  const [maxPrice, setMaxPrice] = useState('');
 
   // Get products
   useEffect(() => {
@@ -18,9 +22,26 @@ export default function Shop() {
   }, []);
 
   // Brands and Colors
-  const brands = ["SteelSeries", "Logitech", "Apple"];
+  const brands = ["steelseries", "logitech", "apple"];
 
-  const colors = ["Black", "White", "Gray"];
+  const colors = ["silver", "grey", "black"];
+
+  const handleBrandChange = (brand, checked) => {
+    setSelectedBrands(prev => checked ? [...prev, brand] : prev.filter(b => b !== brand));
+  };
+
+  const handleColorChange = (color, checked) => {
+    setSelectedColors(prev => checked ? [...prev, color] : prev.filter(c => c !== color));
+  };
+
+  const parsePrice = (priceStr) => parseFloat(priceStr.replace('£ ', '').replace(',', '.'));
+
+  let filtered = products;
+  if (selectedBrands.length > 0) filtered = filtered.filter(p => selectedBrands.includes(p.brand));
+  if (selectedColors.length > 0) filtered = filtered.filter(p => p.color.some(c => selectedColors.includes(c)));
+  if (minPrice) filtered = filtered.filter(p => parsePrice(p.price) >= parseFloat(minPrice));
+  if (maxPrice) filtered = filtered.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
+  const filteredProducts = filtered;
 
   return (
     <>
@@ -44,7 +65,7 @@ export default function Shop() {
                 {brands.map((brand) => (
                   <li key={brand}>
                     <label className="checkbox" htmlFor={brand}>
-                      {brand} <input id={brand} name={brand} type="checkbox" />
+                      {brand.charAt(0).toUpperCase() + brand.slice(1)} <input id={brand} name={brand} type="checkbox" checked={selectedBrands.includes(brand)} onChange={(e) => handleBrandChange(brand, e.target.checked)} />
                       <span className="checkmark" />
                     </label>
                   </li>
@@ -65,9 +86,10 @@ export default function Shop() {
               >
                 {colors.map((color) => (
                   <li key={color}>
-                    <label htmlFor={color}>
-                      {color}
-                      <input name={color} id={color} type="checkbox" />
+                    <label className="checkbox" htmlFor={color}>
+                      {color.charAt(0).toUpperCase() + color.slice(1)}
+                      <input name={color} id={color} type="checkbox" checked={selectedColors.includes(color)} onChange={(e) => handleColorChange(color, e.target.checked)} />
+                      <span className="checkmark" />
                     </label>
                   </li>
                 ))}
@@ -89,10 +111,12 @@ export default function Shop() {
                     <input
                       className="price__input"
                       type="number"
-                      min={50}
-                      max={10000}
+                      placeholder="Min price"
+                      value={minPrice}
+                      onChange={(e) => setMinPrice(e.target.value)}
+                      min={0}
                     />
-                    <span>kr</span>
+                    <span>£</span>
                   </div>
 
                   <span className="price__dash">-</span>
@@ -101,17 +125,19 @@ export default function Shop() {
                     <input
                       className="price__input"
                       type="number"
-                      min={50}
-                      max={10000}
+                      placeholder="Max price"
+                      value={maxPrice}
+                      onChange={(e) => setMaxPrice(e.target.value)}
+                      min={0}
                     />
-                    <span>kr</span>
+                    <span>£</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="products__wrapper">
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>

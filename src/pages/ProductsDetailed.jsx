@@ -10,12 +10,12 @@ import "./productsDetailed.scss";
 
 export default function ProductsDetails() {
   const [cart, setCart] = useState([]);
+  const [localCart, setLocalCart] = useState([]);
   const [addToCart, setAddToCart] = useState(1);
-
   const [selected, setSelected] = useState("");
 
-  const [localCart, setLocalCart] = useState();
   const { product: products } = useLoaderData();
+
   const getStockStatus = (stock) => {
     if (stock === 0) return "Out of stock";
     if (stock >= 1 && stock <= 3) return "Few in stock";
@@ -154,36 +154,46 @@ export default function ProductsDetails() {
                       "du kan ikke tilføje 0 til kurven eller overskride lagerbeholdningen"
                     );
                   }
+                  if (!selected) {
+                    return alert("Vælg en farve først");
+                  }
 
                   setCart((prevCart) => {
                     if (!Array.isArray(prevCart)) return [];
 
                     const existing = prevCart.find(
-                      (item) => item.id === products.id
+                      (item) =>
+                        item.id === products.id &&
+                        item.selected_color === selected
                     );
+
                     if (existing) {
                       if (existing.quantity + addToCart > products.stock) {
                         alert("du kan ikke overskride lagerbeholdningen");
                         return prevCart;
                       }
-                      return prevCart.map((item) =>
-                        item.id === products.id
-                          ? {
-                              ...item,
-                              quantity: item.quantity + addToCart,
-                              selectedColor: selected,
-                            }
-                          : item
+
+                      return (
+                        prevCart.map((item) =>
+                          item.id === products.id &&
+                          item.selected_color === selected
+                            ? {
+                                ...item,
+                                quantity: item.quantity + addToCart,
+                              }
+                            : item
+                            ) // && localStorage.setItem("cart", JSON.stringify(...prevCart))
                       );
                     }
+
                     return [
                       ...prevCart,
                       {
                         ...products,
                         quantity: addToCart,
-                        selectedColor: selected,
+                        selected_color: selected,
                       },
-                    ];
+                    ]
                   });
                 }}
                 className="productsDetails__section__info__cart__cartButton"

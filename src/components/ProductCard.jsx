@@ -15,12 +15,13 @@ export default function ProductCard({ product, popular }) {
 
   return (
     <figure
-      onClick={
-        product.stock === 0
-          ? ""
-          : () => navigate(`/productsDetails/${product.id}`)
-      }
-      className={`productCard ${popular ? "popular" : ""} ${product.stock === 0 ? "noStock" : ""}` }
+      onClick={() => {
+        if (product.stock === 0) return;
+        navigate(`/productsDetails/${product.id}`);
+      }}
+      className={`productCard ${popular ? "popular" : ""} ${
+        product.stock === 0 ? "noStock" : ""
+      }`}
     >
       <div className="productCard__img">
         <img src={product.image[0]} alt={product.name} />
@@ -32,7 +33,10 @@ export default function ProductCard({ product, popular }) {
         </div>
         <h4>{product.price}</h4>
         <div className="productCard__content__bottom">
-          <SigmaButton className={product.stock === 0 ? "outOfStockBtn" : ""} text="Read more" />
+          <SigmaButton
+            className={product.stock === 0 ? "outOfStockBtn" : ""}
+            text="Read more"
+          />
           {!popular && (
             <p>
               {stockStatus}

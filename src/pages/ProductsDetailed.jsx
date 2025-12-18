@@ -57,7 +57,7 @@ export default function ProductsDetails() {
     <>
       <Header />
       <main className="productsDetails">
-        <h1 className="productsDetails__title">product</h1>
+        <h2 className="productsDetails__title">product</h2>
         <section className="productsDetails__section">
           <figure className="productsDetails__section__figure slider">
             <button id="prevBtn" onClick={prevSlide}>

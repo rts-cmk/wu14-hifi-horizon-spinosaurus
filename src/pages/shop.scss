@@ -148,3 +148,10 @@
   gap: 20px;
   flex: 1;
 }
+// ----- Responsive -----
+@media (max-width:1000px) {
+  .sort {
+    background-color: red;
+    display: none;
+  }
+}

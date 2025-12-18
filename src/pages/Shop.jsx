@@ -13,6 +13,7 @@ export default function Shop() {
   const [selectedColors, setSelectedColors] = useState([]);
   const [minPrice, setMinPrice] = useState('');
   const [maxPrice, setMaxPrice] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Get products
   useEffect(() => {
@@ -41,11 +42,12 @@ export default function Shop() {
   if (selectedColors.length > 0) filtered = filtered.filter(p => p.color.some(c => selectedColors.includes(c)));
   if (minPrice) filtered = filtered.filter(p => parsePrice(p.price) >= parseFloat(minPrice));
   if (maxPrice) filtered = filtered.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
+  if (searchQuery) filtered = filtered.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()) || p.description.toLowerCase().includes(searchQuery.toLowerCase()));
   const filteredProducts = filtered;
 
   return (
     <>
-      <Header />
+      <Header setSearchQuery={setSearchQuery} />
       <div className="shoppage__wrapper">
         <h2>Products:</h2>
         <section className="products">

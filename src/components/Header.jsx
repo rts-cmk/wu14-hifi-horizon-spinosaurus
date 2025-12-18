@@ -1,9 +1,10 @@
 import { Link, NavLink } from "react-router";
 import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
 import { useState } from "react";
+import Search from "./search";
 import "./Header.scss";
 
-export default function Header() {
+export default function Header({ setSearchQuery }) {
   const [shopMenu, setShopMenu] = useState(false);
   const [burgerMenu, setburgerMenu] = useState(false);
   return (
@@ -30,12 +31,8 @@ export default function Header() {
           </li>
         </ul>
         <ul className="header__tools">
-          {/*input component????????*/}
           <li className="header__tools__input">
-            <input type="text" placeholder="Search product..." />
-            <button>
-              <FaSearch size={20} />
-            </button>
+            <Search onSearch={setSearchQuery} />
           </li>
           <li>
             <FaUser color="white" size={25} />

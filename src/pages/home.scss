@@ -113,6 +113,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .popularProducts {
+    padding: 20px 15px 30px 15px;
+  }
+  .popularProducts__top {
+    flex-direction: column;
+    gap: 20px;
+  }
   .homepage__newsletter {
     padding: 1rem;
     &__container__form {

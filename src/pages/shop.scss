@@ -10,6 +10,7 @@
 }
 
 .products {
+  position: relative;
   display: flex;
   gap: 30px;
 }
@@ -149,9 +150,52 @@
   flex: 1;
 }
 // ----- Responsive -----
-@media (max-width:1000px) {
+.sort__phone__btn {
+  padding: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  z-index: 7;
+  transition: width 0.3s ease-in;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray3-color;
+  svg {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(-90deg);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.sort__phone__btn.active {
+  justify-content: end;
+  width: 250px;
+  svg {
+    transform: rotate(0);
+  }
+}
+@media (max-width: 1000px) {
+  .sort__phone__btn {
+    display: flex;
+  }
   .sort {
-    background-color: red;
-    display: none;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    width: 0;
+    padding: 10px;
+    position: absolute;
+    z-index: 5;
+    top: 35px;
+    left: -35px;
+    background-color: $gray3-color;
+  }
+  .sort.active {
+    opacity: 1;
+    width: 250px;
   }
 }

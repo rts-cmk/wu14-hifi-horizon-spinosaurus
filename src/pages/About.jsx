@@ -1,10 +1,7 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import "./about.scss";
 export default function About() {
   return (
     <>
-      <Header />
       <div className="aboutpage__wrapper">
         <h2>Our History</h2>
         <div className="about">
@@ -130,7 +127,6 @@ export default function About() {
           </section>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

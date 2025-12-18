@@ -2,9 +2,8 @@ import { FaAngleDown } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import "./shop.scss";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 export default function Shop() {
+  const [sortPhone, setSortPhone] = useState(false)
   const [sortBrand, setSortBrand] = useState(false);
   const [sortColor, setSortColor] = useState(false);
   const [sortPrice, setSortPrice] = useState();
@@ -13,7 +12,7 @@ export default function Shop() {
   const [selectedColors, setSelectedColors] = useState([]);
   const [minPrice, setMinPrice] = useState('');
   const [maxPrice, setMaxPrice] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
+
 
   // Get products
   useEffect(() => {
@@ -42,16 +41,15 @@ export default function Shop() {
   if (selectedColors.length > 0) filtered = filtered.filter(p => p.color.some(c => selectedColors.includes(c)));
   if (minPrice) filtered = filtered.filter(p => parsePrice(p.price) >= parseFloat(minPrice));
   if (maxPrice) filtered = filtered.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
-  if (searchQuery) filtered = filtered.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()) || p.description.toLowerCase().includes(searchQuery.toLowerCase()));
   const filteredProducts = filtered;
 
   return (
     <>
-      <Header setSearchQuery={setSearchQuery} />
       <div className="shoppage__wrapper">
         <h2>Products:</h2>
         <section className="products">
-          <div className="sort">
+          <button onClick={() => setSortPhone((prev) => !prev)} className={`sort__phone__btn ${sortPhone ? "active" : ""}`}><FaAngleDown /></button>
+          <div className={`sort ${sortPhone ? "active" : ""}`}>
             <h3>Sort by</h3>
             <div className="sort__by">
               <div
@@ -145,7 +143,6 @@ export default function Shop() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

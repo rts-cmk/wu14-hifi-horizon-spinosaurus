@@ -3,9 +3,6 @@ import { useLoaderData } from "react-router";
 import { FaPlus, FaMinus, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { FaSliders } from "react-icons/fa6";
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-
 import "./productsDetailed.scss";
 
 export default function ProductsDetails() {
@@ -53,9 +50,8 @@ export default function ProductsDetails() {
 
   return (
     <>
-      <Header />
       <main className="productsDetails">
-        <h2 className="productsDetails__title">product</h2>
+        <h2 className="page__title">product</h2>
         <section className="productsDetails__section">
           <figure className="productsDetails__section__figure slider">
             <button id="prevBtn" onClick={prevSlide}>
@@ -199,9 +195,33 @@ export default function ProductsDetails() {
             </div>
           </div>
         </section>
+                <div className="border" />
+        <section className="specs">
+          <h2>Product Specificatons</h2>
+          <ul className="specs__ul">
+            <li>
+              <span>HOLA</span>
+              <span>HOLA</span>
+            </li>
+            <li>
+              <span>HOLA</span>
+              <span>HOLA</span>
+            </li>
+            <li>
+              <span>HOLA</span>
+              <span>HOLA</span>
+            </li>
+            <li>
+              <span>HOLA</span>
+              <span>HOLA</span>
+            </li>
+            <li>
+              <span>HOLA</span>
+              <span>HOLA</span>
+            </li>
+          </ul>
+        </section>
       </main>
-      <div className="border" />
-      <Footer />
     </>
   );
 }

@@ -4,9 +4,14 @@ import { useState } from "react";
 import Search from "./search";
 import "./Header.scss";
 
-export default function Header({ setSearchQuery }) {
+export default function Header({ products }) {
   const [shopMenu, setShopMenu] = useState(false);
   const [burgerMenu, setburgerMenu] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredProducts = searchQuery
+    ? products.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()) || p.description.toLowerCase().includes(searchQuery.toLowerCase()))
+    : [];
   return (
     <>
       <header className="header">
@@ -33,6 +38,17 @@ export default function Header({ setSearchQuery }) {
         <ul className="header__tools">
           <li className="header__tools__input">
             <Search onSearch={setSearchQuery} />
+            {searchQuery && filteredProducts.length > 0 && (
+              <ul className="search__results">
+                {filteredProducts.slice(0, 5).map(product => (
+                  <li key={product.id} className="search__result">
+                    <Link to={`/productsDetails/${product.id}`} onClick={() => setSearchQuery("")}>
+                      {product.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
           <li>
             <FaUser color="white" size={25} />

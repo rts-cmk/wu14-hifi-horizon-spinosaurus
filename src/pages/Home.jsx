@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import ProductCard from "../components/ProductCard";
 import SigmaButton from "../components/SigmaButton";
 import "./home.scss";
@@ -17,7 +15,6 @@ export default function Home() {
 
   return (
     <div className="homepage__wrapper">
-      <Header />
       <section className="hero">
         <video
           className="hero__video"
@@ -32,7 +29,7 @@ export default function Home() {
         <div className="popularProducts__top">
           <h2>Popular products</h2>
           <Link to="/shop">
-            <SigmaButton text={"See all products"} />
+          <button className="sigmaBtn">See all products</button>
           </Link>
         </div>
         <div className="popularProducts__grid">
@@ -120,8 +117,6 @@ export default function Home() {
           </form>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

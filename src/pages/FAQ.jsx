@@ -1,12 +1,8 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-
 import "./FAQ.scss";
 
 export default function FAQ() {
   return (
     <>
-      <Header />
       <div className="FAQ">
         <h1 className="FAQ__title">FAQ</h1>
         <main className="FAQ__main">
@@ -178,7 +174,6 @@ export default function FAQ() {
           </section>
         </main>
       </div>
-      <Footer />
     </>
   );
 }

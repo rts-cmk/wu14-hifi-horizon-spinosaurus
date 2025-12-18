@@ -11,7 +11,7 @@ import ProductsDetails from "./pages/ProductsDetailed";
 import FAQ from "./pages/FAQ";
 import { ProductDetailLoader } from "./loader";
 import Layout from "./components/Layout";
-
+import ContactForm from "./pages/Contact";
 export default function App() {
   const [products, setProducts] = useState([]);
 
@@ -42,6 +42,10 @@ export default function App() {
     {
       path: "/faq",
       element: <Layout products={products}><FAQ /></Layout>,
+    },
+    {
+      path: "/contact",
+      element: <Layout products={products}><ContactForm /></Layout>,
     },
     {
       path: "*",

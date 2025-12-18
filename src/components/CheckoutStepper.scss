@@ -1,0 +1,21 @@
+.checkoutStepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__divider {
+    width: 6rem;
+    height: 36px;
+    background: #ffff;
+  }
+}

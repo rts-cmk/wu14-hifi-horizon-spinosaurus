@@ -9,8 +9,9 @@ import Header from "../components/Header";
 import "./productsDetailed.scss";
 
 export default function ProductsDetails() {
-  const [cart, setCart] = useState([]);
-  const [localCart, setLocalCart] = useState([]);
+  const [cart, setCart] = useState(
+    localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : []
+  );
   const [addToCart, setAddToCart] = useState(1);
   const [selected, setSelected] = useState("");
 
@@ -22,16 +23,13 @@ export default function ProductsDetails() {
     return "In stock";
   };
 
-  console.log(cart);
-
   const stockStatus = getStockStatus(products.stock);
 
+  console.log(cart);
+
   useEffect(() => {
-    const storedCart = localStorage.getItem("cart");
-    if (storedCart) {
-      setLocalCart(JSON.parse(storedCart));
-    }
-  }, []);
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const slidesRef = useRef(null);
@@ -173,16 +171,14 @@ export default function ProductsDetails() {
                         return prevCart;
                       }
 
-                      return (
-                        prevCart.map((item) =>
-                          item.id === products.id &&
-                          item.selected_color === selected
-                            ? {
-                                ...item,
-                                quantity: item.quantity + addToCart,
-                              }
-                            : item
-                            ) // && localStorage.setItem("cart", JSON.stringify(...prevCart))
+                      return prevCart.map((item) =>
+                        item.id === products.id &&
+                        item.selected_color === selected
+                          ? {
+                              ...item,
+                              quantity: item.quantity + addToCart,
+                            }
+                          : item
                       );
                     }
 
@@ -193,7 +189,7 @@ export default function ProductsDetails() {
                         quantity: addToCart,
                         selected_color: selected,
                       },
-                    ]
+                    ];
                   });
                 }}
                 className="productsDetails__section__info__cart__cartButton"

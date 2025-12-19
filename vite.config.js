@@ -7,7 +7,7 @@ export default defineConfig(() => {
   return {
     plugins: [react()],
     server: {
-      proxy: !isProd
+      proxy: isProd
         ? {
             "/api": {
               target: "https://hifi-server.vercel.app",
@@ -15,7 +15,13 @@ export default defineConfig(() => {
               rewrite: (path) => path.replace(/^\/api/, ""),
             },
           }
-        : undefined,
+        : {
+            "/api": {
+              target: "http://localhost:6767",
+              changeOrigin: true,
+              rewrite: (path) => path.replace(/^\/api/, ""),
+            },
+          },
     },
   };
 });

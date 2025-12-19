@@ -1,0 +1,244 @@
+@use "../style/variables.scss" as *;
+// ----- HEADER -----
+.navBar {
+  display: none;
+}
+.header {
+  position: relative;
+  padding: 15px 35px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  .header__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    a {
+      padding-bottom: 5px;
+      position: relative;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: white;
+      img {
+        width: 55px;
+      }
+    }
+    a.active {
+      font-weight: bolder;
+      color: $golden-color;
+    }
+    li:nth-child(n + 2) a:after {
+      transition: width 0.3s ease-in-out;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: $golden-color;
+    }
+    li:nth-child(n + 2) a:hover {
+      color: $golden-color;
+    }
+    li:nth-child(n + 2) a:hover:after {
+      width: 100%;
+    }
+  }
+
+  // ----- Header Shop Menu -----
+  .header__shop {
+    position: relative;
+  }
+  .header__shopMenu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(30%, 93%);
+    z-index: 999;
+    padding-top: 20px;
+  }
+  .header__shopMenu__content {
+    position: relative;
+    background-color: white;
+    width: 300px;
+    h2 {
+      font-size: 20px;
+      color: black;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        padding: 15px;
+        font-size: 16px;
+      }
+      li:nth-child(n+2){
+        color: $golden-color;
+      }
+      li:hover {
+        cursor: pointer;
+        background-color: rgb(230, 230, 230);
+      }
+    }
+  }
+  .header__shopMenu__content::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-color: white;
+    top: -5px;
+    transform: rotate(45deg);
+    left: 20px;
+    width: 10px;
+    height: 10px;
+  }
+
+  // ----- Header Tools -----
+  .header__tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .header__tools__input {
+      position: relative;
+      .search {
+        position: relative;
+        .search__input {
+          border-radius: 3px;
+          padding: 10px;
+          font-size: 12px;
+          width: 200px;
+        }
+        .search__input::placeholder {
+          color: black;
+        }
+      }
+      .search__results {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+        .search__result {
+          padding: 10px;
+          border-bottom: 1px solid #eee;
+          &:last-child {
+            border-bottom: none;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              color: $golden-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----- NavBarPhone -----
+.navBar {
+  box-shadow: 0px -3px 5px 0px rgba(50, 50, 50, 0.75);
+  padding: 20px 35px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  max-width: 600px;
+  width: 100%;
+  background-color: black;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+// burger menu
+.burger {
+  position: relative;
+}
+.burger__btn {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+  span {
+    border-radius: 5px;
+    width: 22px;
+    height: 3px;
+    background-color: white;
+  }
+}
+.burger__btn.open {
+  span {
+    background-color: $appelsin-color;
+    transition: transform 0.4s ease-in;
+  }
+}
+.burger__btn.open span:nth-child(2) {
+  display: none;
+  visibility: hidden;
+}
+.burger__btn.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.burger__btn.open span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+//
+
+.burgerOpen {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 0;
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+  color: white;
+  right: 0;
+  bottom: 67px;
+  transition: height 0.3s ease;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    a {
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+.burgerOpen.open {
+  visibility: visible;
+  height: 400px;
+}
+
+// ----- Responsive -----
+@media (max-width: 690px) {
+  .header {
+    input {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 678px) {
+  .header {
+    display: none;
+  }
+  .navBar {
+    display: block;
+  }
+}

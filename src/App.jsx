@@ -71,7 +71,10 @@ export default function App() {
       path: "/invoice",
       element: <InvoicePage />,
     },
-
+    {
+      path: "/contact",
+      element: <ContactForm />,
+    },
     {
       path: "/faq",
       element: <FAQ />,

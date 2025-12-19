@@ -10,7 +10,6 @@ export default function CartPage() {
   const cartItems = JSON.parse(localStorage.getItem("cart"));
 
   const [addToCart, setAddToCart] = useState(1);
-  console.log(addToCart);
 
   const getStockStatus = (stock) => {
     if (stock === 0) return "Out of stock";

@@ -1,4 +1,7 @@
-
-export default function SigmaButton({text, className}){
-    return <button className={`sigmaBtn ${className}`}>{text}</button>
+export default function SigmaButton({ text, className }) {
+  return (
+    <button type="button" className={`sigmaBtn ${className}`}>
+      {text}
+    </button>
+  );
 }

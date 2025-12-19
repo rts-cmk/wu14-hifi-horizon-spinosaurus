@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
-import SigmaButton from "../components/SigmaButton";
 import "./home.scss";
 import { Link } from "react-router";
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
         <div className="popularProducts__top">
           <h2>Popular products</h2>
           <Link to="/shop">
-          <button className="sigmaBtn">See all products</button>
+            <button className="sigmaBtn">See all products</button>
           </Link>
         </div>
         <div className="popularProducts__grid">

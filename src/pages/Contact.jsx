@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./Contact.scss";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -43,68 +41,64 @@ export default function ContactForm() {
   };
 
   return (
-    <>
-      <Header />
-      <div className="contactpage__wrapper">
-        <h2 className="page__title">Get in touch with us</h2>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <label>
-            Full name *
-            <input
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              className="input"
-            />
-            {errors.name && <span className="error">{errors.name}</span>}
-          </label>
+    <div className="contactpage__wrapper">
+      <h2 className="page__title">Get in touch with us</h2>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <label>
+          Full name *
+          <input
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            className="input"
+          />
+          {errors.name && <span className="error">{errors.name}</span>}
+        </label>
 
-          <label>
-            Email *
-            <input
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              className="input"
-            />
-            {errors.email && <span className="error">{errors.email}</span>}
-          </label>
+        <label>
+          Email *
+          <input
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            className="input"
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </label>
 
-          <label>
-            Subject *
-            <input
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
-              className="input"
-            />
-            {errors.subject && <span className="error">{errors.subject}</span>}
-          </label>
+        <label>
+          Subject *
+          <input
+            name="subject"
+            value={form.subject}
+            onChange={handleChange}
+            className="input"
+          />
+          {errors.subject && <span className="error">{errors.subject}</span>}
+        </label>
 
-          <label>
-            Message *
-            <textarea
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              className="textarea"
-            />
-            {errors.message && <span className="error">{errors.message}</span>}
-          </label>
+        <label>
+          Message *
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            className="textarea"
+          />
+          {errors.message && <span className="error">{errors.message}</span>}
+        </label>
 
-          <button className="submit-btn" type="submit">
-            Submit
-          </button>
-        </form>
-        <div className="contact__container">
-          <p className="contact__text">
-            Visit our sister companies <span className="o">Home Sound</span> and{" "}
-            <span className="o">The Movie Rooms</span> part of the HiFi Horizon
-            Group.{" "}
-          </p>
-        </div>
+        <button className="submit-btn" type="submit">
+          Submit
+        </button>
+      </form>
+      <div className="contact__container">
+        <p className="contact__text">
+          Visit our sister companies <span className="o">Home Sound</span> and{" "}
+          <span className="o">The Movie Rooms</span> part of the HiFi Horizon
+          Group.{" "}
+        </p>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 }

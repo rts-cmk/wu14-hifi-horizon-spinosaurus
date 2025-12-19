@@ -12,6 +12,10 @@ import FAQ from "./pages/FAQ";
 import { ProductDetailLoader } from "./loader";
 import Layout from "./components/Layout";
 import ContactForm from "./pages/Contact";
+import CartPage from "./pages/CartPage";
+import InvoicePage from "./pages/Invoice";
+import PaymentPage from "./pages/PaymentPage";
+
 export default function App() {
   const [products, setProducts] = useState([]);
 
@@ -24,32 +28,57 @@ export default function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout products={products}><Home /></Layout>,
+      element: (
+        <Layout products={products}>
+          <Home />
+        </Layout>
+      ),
     },
     {
       path: "/shop",
-      element: <Layout products={products}><Shop /></Layout>,
+      element: (
+        <Layout products={products}>
+          <Shop />
+        </Layout>
+      ),
     },
     {
       path: "/about",
-      element: <Layout products={products}><About /></Layout>,
+      element: (
+        <Layout products={products}>
+          <About />
+        </Layout>
+      ),
     },
     {
       path: "/productsDetails/:id",
-      element: <Layout products={products}><ProductsDetails /></Layout>,
+      element: (
+        <Layout products={products}>
+          <ProductsDetails />
+        </Layout>
+      ),
       loader: ProductDetailLoader,
     },
     {
-      path: "/faq",
-      element: <Layout products={products}><FAQ /></Layout>,
+      path: "/cart",
+      element: <CartPage />,
     },
     {
-      path: "/contact",
-      element: <Layout products={products}><ContactForm /></Layout>,
+      path: "/payment",
+      element: <PaymentPage />,
+    },
+    {
+      path: "/invoice",
+      element: <InvoicePage />,
+    },
+
+    {
+      path: "/faq",
+      element: <FAQ />,
     },
     {
       path: "*",
-      element: <Layout products={products}><NotFound /></Layout>,
+      element: <NotFound />,
     },
   ]);
 

@@ -1,6 +1,6 @@
 import CheckoutStepper from "../components/CheckoutStepper";
 
-import "./invoicepage.scss";
+import "./InvoicePage.scss";
 
 export default function InvoicePage() {
   return (

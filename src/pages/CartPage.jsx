@@ -1,7 +1,7 @@
 import { FaMinus, FaPlus } from "react-icons/fa";
 import CheckoutStepper from "../components/CheckoutStepper";
 
-import "./cartpage.scss";
+import "./CartPage.scss";
 import { useState } from "react";
 
 export default function CartPage() {

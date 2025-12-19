@@ -7,7 +7,7 @@ export default function Home() {
 
   // Popular products
   useEffect(() => {
-    fetch("http://localhost:6767/products")
+    fetch("/api/products")
       .then((res) => res.json())
       .then((data) => setPopularProducts(data.products.slice(0, 4)));
   }, []);

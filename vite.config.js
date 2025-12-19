@@ -10,7 +10,7 @@ export default defineConfig(() => {
       proxy: !isProd
         ? {
             "/api": {
-              target: "http://localhost:6767",
+              target: "https://hifi-server.vercel.app",
               changeOrigin: true,
               rewrite: (path) => path.replace(/^\/api/, ""),
             },

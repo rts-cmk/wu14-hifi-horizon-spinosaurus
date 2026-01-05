@@ -16,7 +16,7 @@ export default function Shop() {
 
   // Get products
   useEffect(() => {
-    fetch("/api/products")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setProducts(data.products));
   }, []);

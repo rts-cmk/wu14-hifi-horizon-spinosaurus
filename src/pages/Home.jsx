@@ -1,14 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import ProductCard from "../components/ProductCard";
 import SigmaButton from "../components/SigmaButton";
 import "./home.scss";
 import { Link } from "react-router";
 export default function Home() {
   const [popularProducts, setPopularProducts] = useState([]);
+  const signUpRef = useRef(null);
 
   // Popular products
   useEffect(() => {
-    fetch("http://localhost:6767/products")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setPopularProducts(data.products.slice(0, 4)));
   }, []);
@@ -97,13 +98,14 @@ export default function Home() {
               type="text"
               name="signUp"
               id="signUp"
+              ref={signUpRef}
             />
             <button
               type="submit"
               className="homepage__newsletter__container__form__button"
               text={"Sign up"}
               onClick={(e) => {
-                if (signUp.value === "") {
+                if (signUpRef.current.value === "") {
                   e.preventDefault();
                   alert("Please enter a valid email address");
                   return;
